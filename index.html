@@ -301,7 +301,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-16 08:39:57" itemprop="dateModified" datetime="2021-05-16T08:39:57+09:00">2021-05-16</time>
+        <time title="Modified: 2021-05-16 08:40:46" itemprop="dateModified" datetime="2021-05-16T08:40:46+09:00">2021-05-16</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -342,7 +342,7 @@ mjx-container[display="true"] + br {
 <p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="string">"python.pythonPath"</span>: <span class="string">"venv\\Scripts\\python.exe"</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure></p></li>
 <li><p>다른 프로젝트 개발을 하게 될 때 'deactivate'를 해서 가상환경에서 빠져나온다.</p></li>
 <li><p>가상환경에 설치된 패키지들은 다음의 방법으로 기록하였다가 설치할 수 있다.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="vscode를-이용한-플러터-개발"><strong>VSCODE를 이용한 플러터 개발</strong></h2>
 <p><img src="https://miro.medium.com/max/3044/1*hRgOExxt7PP6vBTJFBhHSA.png"></p>
@@ -391,7 +391,7 @@ mjx-container[display="true"] + br {
 <li>깃허브에 배포하기 위해서 다음의 준비를 한다.
 <ul>
 <li><p>_config.yaml 수정</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    <span class="attr">repo</span>: 저장소 주소(예: https:<span class="comment">//github.com/사용자계정/사용자계정.github.io.git)</span></span><br><span class="line">    branch: master 또는 main (어느 것인지는 깃허브에서 확인)</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    <span class="attr">repo</span>: 저장소 주소(예: https:<span class="comment">//github.com/{자신의 아이디}/{자신의 아이디}.github.io.git)</span></span><br><span class="line">    branch: master 또는 main (어느 것인지는 깃허브에서 확인)</span><br></pre></td></tr></table></figure></li>
 <li><p>배포용 프로그램 설치</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
 <li><p>배포</p>
