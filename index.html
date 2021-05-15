@@ -71,12 +71,12 @@
 
 
         <p>20210515 토 오후 4 <strong>고진감래</strong></p>
-<h2 id="VSCODE를-이용한-파이썬을-개발"><a href="#VSCODE를-이용한-파이썬을-개발" class="headerlink" title="VSCODE를 이용한 파이썬을 개발"></a><strong>VSCODE를 이용한 파이썬을 개발</strong></h2><h4 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h4><ul>
+<h2 id="VSCODE를-이용한-파이썬-개발"><a href="#VSCODE를-이용한-파이썬-개발" class="headerlink" title="VSCODE를 이용한 파이썬 개발"></a><strong>VSCODE를 이용한 파이썬 개발</strong></h2><h3 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h3><ul>
 <li>우선 파이썬이 콘다 패키지로 설치되어야 한다.</li>
 <li>VSCODE를 설치해야 한다.</li>
 <li>그리고 VSCODE 파이썬 패키지를 설치해야 한다.</li>
 </ul>
-<h4 id="가상환경과-디버깅"><a href="#가상환경과-디버깅" class="headerlink" title="가상환경과 디버깅"></a>가상환경과 디버깅</h4><ul>
+<h3 id="가상환경과-디버깅"><a href="#가상환경과-디버깅" class="headerlink" title="가상환경과 디버깅"></a>가상환경과 디버깅</h3><ul>
 <li><p>파이썬 프로젝트의 실행환경을 위해서 다음처럼 프로젝트 폴더에서 터미널을 킨 후 가상환경을 구축할 수 있다.</p>
   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m venv venv</span><br></pre></td></tr></table></figure></li>
 <li><p>하지만 기본 터미널인 파워쉘에서는 여러 에러가 나기 때문에 관리자 모드로 파워쉘을 한 번 실행한 후 Set-ExecutionPolicy Unrestricted 실행시킨다. 그러면 가상환경 실행에 무리가 없다.</p>
@@ -98,7 +98,7 @@
 <li>VSCODE에서 플러터 관련 패키지를 설치한다.</li>
 <li>여기까지 되면 시스템을 다시 시작해야 한다.</li>
 </ul>
-<h2 id="VSCODE를-이용한-HEXO-방식-GITHUB-IO-블로그를-운영"><a href="#VSCODE를-이용한-HEXO-방식-GITHUB-IO-블로그를-운영" class="headerlink" title="VSCODE를 이용한 HEXO 방식 GITHUB.IO 블로그를 운영"></a><strong>VSCODE를 이용한 HEXO 방식 GITHUB.IO 블로그를 운영</strong></h2><ul>
+<h2 id="VSCODE를-이용한-HEXO-방식-GITHUB-IO-블로그-운영"><a href="#VSCODE를-이용한-HEXO-방식-GITHUB-IO-블로그-운영" class="headerlink" title="VSCODE를 이용한 HEXO 방식 GITHUB.IO 블로그 운영"></a><strong>VSCODE를 이용한 HEXO 방식 GITHUB.IO 블로그 운영</strong></h2><ul>
 <li><p>깃을 설치한다.</p>
 </li>
 <li><p>우선 깃허브 가입 후 새 리포지토리를 {자신의 아이디}.github.io 이름으로 만든다.</p>
@@ -108,7 +108,7 @@
 <li><p>그 다음 블로그 폴더를 생성할 곳으로 이동해서 터미널로 hexo init {블로그 폴더 이름}을 수행한다.</p>
 </li>
 <li><p>그리고 그 블로그 폴더로 이동하여 터미널에서 다음을 입력한다.</p>
-  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">git clone https:<span class="comment">//github.com/&#123;자신의 아이디&#125;/&#123;자신의 아이디&#125;.github.io.git .</span></span><br></pre></td></tr></table></figure></li>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">git clone https://github.com/&#123;자신의 아이디&#125;/&#123;자신의 아이디&#125;.github.io.git .</span><br></pre></td></tr></table></figure></li>
 <li><p>그 후 자신이 인터넷에서 다운로드 받은 theme을 theme 폴더 안에 복사한다.</p>
 </li>
 <li><p>그리고 블로그 폴더에 형성된 _config.yaml 속 theme 설정 부분을 theme 폴더 속에 복사한 theme 폴더의 폴더명으로 적어준다.</p>
@@ -116,11 +116,11 @@
 <li><p>깃허브에 배포하기 위해서 다음의 준비를 한다.</p>
 <ul>
 <li><p>_config.yaml 수정</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    <span class="attr">repo</span>: 저장소 주소(예: https:<span class="comment">//github.com/사용자계정/사용자계정.github.io.git)</span></span><br><span class="line">    branch: master 또는 main (어느 것인지는 깃허브에서 확인)</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: 저장소 주소(예: https://github.com/사용자계정/사용자계정.github.io.git)</span><br><span class="line">    branch: master 또는 main (어느 것인지는 깃허브에서 확인)</span><br></pre></td></tr></table></figure></li>
 <li><p>배포용 프로그램 설치</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
 <li><p>배포</p>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
 <li><p>이상은 리포지토리에 푸시하는 깃의 작동과는 관계가 없다. 이 점에서 Jekyll과 다르며 결국 hexo의 경우 버전 관리는 로컬에서 VSCODE GIT으로 하면 된다. 이를 위해서는 블로그 폴더에서 터미널을 통해 다음을 한 번 수행해야 한다.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
 </ul>
