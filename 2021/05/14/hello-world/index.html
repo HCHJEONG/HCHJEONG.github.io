@@ -13,7 +13,7 @@
 <meta property="og:description" content="20210515 토 오후 4 고진감래 VSCODE를 이용한 파이썬을 개발설치 우선 파이썬이 콘다 패키지로 설치되어야 한다. VSCODE를 설치해야 한다. 그리고 VSCODE 파이썬 패키지를 설치해야 한다.  가상환경과 디버깅 파이썬 프로젝트의 실행환경을 위해서 다음처럼 프로젝트 폴더에서 터미널을 킨 후 가상환경을 구축할 수 있다.   1python -m v">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-14T10:04:47.079Z">
-<meta property="article:modified_time" content="2021-05-15T09:31:00.544Z">
+<meta property="article:modified_time" content="2021-05-15T09:57:11.955Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
   
@@ -90,6 +90,8 @@
   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;python.pythonPath&quot;</span>: <span class="string">&quot;venv\\Scripts\\python.exe&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>다른 프로젝트 개발을 하게 될 때 ‘deactivate’를 해서 가상환경에서 빠져나온다.</p>
 </li>
+<li><p>가상환경에 설치된 패키지들은 다음의 방법으로 기록하였다가 설치할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="VSCODE를-이용한-플러터-개발"><a href="#VSCODE를-이용한-플러터-개발" class="headerlink" title="VSCODE를 이용한 플러터 개발"></a><strong>VSCODE를 이용한 플러터 개발</strong></h2><ul>
 <li>우선 JAVA jdk가 필요하고 jre은 안 된다. 그 후 JAVA_HOME 환경변수(C:\Program Files\Java\jdk1.8.0_241) 설정과 CLASSPATH 환경변수(%JAVA_HOME%\lib) 설정이 필요하다.</li>

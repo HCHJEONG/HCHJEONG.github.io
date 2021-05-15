@@ -87,6 +87,8 @@
   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;python.pythonPath&quot;</span>: <span class="string">&quot;venv\\Scripts\\python.exe&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>다른 프로젝트 개발을 하게 될 때 ‘deactivate’를 해서 가상환경에서 빠져나온다.</p>
 </li>
+<li><p>가상환경에 설치된 패키지들은 다음의 방법으로 기록하였다가 설치할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="VSCODE를-이용한-플러터-개발"><a href="#VSCODE를-이용한-플러터-개발" class="headerlink" title="VSCODE를 이용한 플러터 개발"></a><strong>VSCODE를 이용한 플러터 개발</strong></h2><ul>
 <li>우선 JAVA jdk가 필요하고 jre은 안 된다. 그 후 JAVA_HOME 환경변수(C:\Program Files\Java\jdk1.8.0_241) 설정과 CLASSPATH 환경변수(%JAVA_HOME%\lib) 설정이 필요하다.</li>
