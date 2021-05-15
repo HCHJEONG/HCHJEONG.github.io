@@ -45,7 +45,119 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -119,6 +231,10 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
   </nav>
 </div>
 
@@ -185,8 +301,17 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-16 07:47:07" itemprop="dateModified" datetime="2021-05-16T07:47:07+09:00">2021-05-16</time>
+        <time title="Modified: 2021-05-16 07:50:08" itemprop="dateModified" datetime="2021-05-16T07:50:08+09:00">2021-05-16</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/vscode/" itemprop="url" rel="index"><span itemprop="name">vscode</span></a>
+        </span>
+    </span>
 
   
 </div>
@@ -200,7 +325,7 @@
     <div class="post-body" itemprop="articleBody">
           <p>20210515 토 오후 4 <strong>고진감래</strong></p>
 <h2 id="vscode를-이용한-파이썬-개발"><strong>VSCODE를 이용한 파이썬 개발</strong></h2>
-<p><img src="https://miro.medium.com/max/3836/1*we5v52-t4si1fvhi6pHB1w.png" /> ### 설치</p>
+<p><img src="https://miro.medium.com/max/3836/1*we5v52-t4si1fvhi6pHB1w.png"> ### 설치</p>
 <ul>
 <li>우선 파이썬이 콘다 패키지로 설치되어야 한다.</li>
 <li>VSCODE를 설치해야 한다.</li>
@@ -212,15 +337,15 @@
 <p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m venv venv</span><br></pre></td></tr></table></figure></p></li>
 <li>하지만 기본 터미널인 파워쉘에서는 여러 에러가 나기 때문에 관리자 모드로 파워쉘을 한 번 실행한 후 Set-ExecutionPolicy Unrestricted 실행시킨다. 그러면 가상환경 실행에 무리가 없다.</li>
 <li><p>디버깅을 할 때 .vscode 폴더에 settings.json을 만들고 아래와 같이 하면 가상환경 없이 디버깅이 된다.</p>
-<p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;python.terminal.activateEnvironment&quot;</span>: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></li>
-<li><p>디버깅을 할 때 .vscode 폴더에 settings.json을 만들고 아래와 같이 하면 가상환경으로 디버깅이 된다. &quot;venv&quot; 이름으로 가상환경 폴더를 만들었을 경우이다.</p>
-<p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;python.pythonPath&quot;</span>: <span class="string">&quot;venv\\Scripts\\python.exe&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></li>
+<p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="string">"python.terminal.activateEnvironment"</span>: false</span><br><span class="line">}</span><br></pre></td></tr></table></figure></p></li>
+<li><p>디버깅을 할 때 .vscode 폴더에 settings.json을 만들고 아래와 같이 하면 가상환경으로 디버깅이 된다. "venv" 이름으로 가상환경 폴더를 만들었을 경우이다.</p>
+<p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="string">"python.pythonPath"</span>: <span class="string">"venv\\Scripts\\python.exe"</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure></p></li>
 <li>다른 프로젝트 개발을 하게 될 때 'deactivate'를 해서 가상환경에서 빠져나온다.</li>
 <li><p>가상환경에 설치된 패키지들은 다음의 방법으로 기록하였다가 설치할 수 있다.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="vscode를-이용한-플러터-개발"><strong>VSCODE를 이용한 플러터 개발</strong></h2>
-<p><img src="https://miro.medium.com/max/3044/1*hRgOExxt7PP6vBTJFBhHSA.png" /></p>
+<p><img src="https://miro.medium.com/max/3044/1*hRgOExxt7PP6vBTJFBhHSA.png"></p>
 <ul>
 <li>우선 JAVA jdk가 필요하고 jre은 안 된다.</li>
 <li></li>
@@ -232,8 +357,8 @@
 <li><p>여기까지 되면 시스템을 다시 시작해야 한다.</p></li>
 </ul>
 <h2 id="vscode를-이용한-hexo-방식-github.io-블로그-운영"><strong>VSCODE를 이용한 HEXO 방식 GITHUB.IO 블로그 운영</strong></h2>
-<p><img src="https://kdydesign.github.io/2017/06/23/hexo-blog/cover.png" /> - 깃을 설치한다. - 우선 깃허브 가입 후 새 리포지토리를 {자신의 아이디}.github.io 이름으로 만든다. - 그리고 node를 설치하고 npm을 설치한 후 npm install hexo-cli -g 실행하여 hexo를 설치한다. - 그 다음 블로그 폴더를 생성할 곳으로 이동해서 터미널로 hexo init {블로그 폴더 이름}을 수행한다. - 그리고 그 블로그 폴더로 이동하여 터미널에서 다음을 입력한다.</p>
-<pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">git clone https://github.com/&#123;자신의 아이디&#125;/&#123;자신의 아이디&#125;.github.io.git .</span><br></pre></td></tr></table></figure></code></pre>
+<p><img src="https://kdydesign.github.io/2017/06/23/hexo-blog/cover.png"> - 깃을 설치한다. - 우선 깃허브 가입 후 새 리포지토리를 {자신의 아이디}.github.io 이름으로 만든다. - 그리고 node를 설치하고 npm을 설치한 후 npm install hexo-cli -g 실행하여 hexo를 설치한다. - 그 다음 블로그 폴더를 생성할 곳으로 이동해서 터미널로 hexo init {블로그 폴더 이름}을 수행한다. - 그리고 그 블로그 폴더로 이동하여 터미널에서 다음을 입력한다.</p>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">git clone https://github.com/{자신의 아이디}/{자신의 아이디}.github.io.git .</span><br></pre></td></tr></table></figure></code></pre>
 <ul>
 <li>그 후 자신이 인터넷에서 다운로드 받은 theme을 theme 폴더 안에 복사한다.</li>
 <li>그리고 블로그 폴더에 형성된 _config.yaml 속 theme 설정 부분을 theme 폴더 속에 복사한 theme 폴더의 폴더명으로 적어준다.</li>
@@ -252,20 +377,20 @@
 <ul>
 <li>우선 HEXO의 렌더러를 교체하고 NexT theme을 설치한다.</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;blog-folder&#125;&gt;npm uninstall hexo-renderer-marked --save</span><br><span class="line">&#123;blog-folder&#125;&gt;npm install hexo-renderer-pandoc --save</span><br><span class="line">&#123;blog-folder&#125;&gt;npm install hexo-theme-next # _config.yaml에서 theme: next 기입</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">- 그리고 LaTeX 서버사이드 렌더러를 설치한다.</span><br><span class="line"></span><br><span class="line">```node</span><br><span class="line">&#123;blog-folder&#125;&gt;npm install hexo-filter-mathjax</span><br><span class="line">&#123;blog-folder&#125;&gt;hexo clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">{blog-folder}&gt;npm uninstall hexo-renderer-marked --save</span><br><span class="line">{blog-folder}&gt;npm install hexo-renderer-pandoc --save</span><br><span class="line">{blog-folder}&gt;npm install hexo-theme-next # _config.yaml에서 theme: next 기입</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">- 그리고 LaTeX 서버사이드 렌더러를 설치한다.</span><br><span class="line"></span><br><span class="line">```node</span><br><span class="line">{blog-folder}&gt;npm install hexo-filter-mathjax</span><br><span class="line">{blog-folder}&gt;hexo clean</span><br></pre></td></tr></table></figure>
 <ul>
 <li>마지막으로 _config.yaml에서 다음을 기입한다.</li>
 </ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">none</span> <span class="comment"># or &#x27;ams&#x27; or &#x27;all&#x27;</span></span><br><span class="line">  <span class="attr">single_dollars:</span> <span class="literal">true</span> <span class="comment"># enable single dollar signs as in-line math delimiters</span></span><br><span class="line">  <span class="attr">cjk_width:</span> <span class="number">0.9</span> <span class="comment"># relative CJK char width</span></span><br><span class="line">  <span class="attr">normal_width:</span> <span class="number">0.6</span> <span class="comment"># relative normal (monospace) width</span></span><br><span class="line">  <span class="attr">append_css:</span> <span class="literal">true</span> <span class="comment"># add CSS to pages rendered by MathJax</span></span><br><span class="line">  <span class="attr">every_page:</span> <span class="literal">false</span> <span class="comment"># if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">none</span> <span class="comment"># or 'ams' or 'all'</span></span><br><span class="line">  <span class="attr">single_dollars:</span> <span class="literal">true</span> <span class="comment"># enable single dollar signs as in-line math delimiters</span></span><br><span class="line">  <span class="attr">cjk_width:</span> <span class="number">0.9</span> <span class="comment"># relative CJK char width</span></span><br><span class="line">  <span class="attr">normal_width:</span> <span class="number">0.6</span> <span class="comment"># relative normal (monospace) width</span></span><br><span class="line">  <span class="attr">append_css:</span> <span class="literal">true</span> <span class="comment"># add CSS to pages rendered by MathJax</span></span><br><span class="line">  <span class="attr">every_page:</span> <span class="literal">false</span> <span class="comment"># if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter </span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>이제 다음과 같이 글머리를 시작하면 된다.</li>
 </ul>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: On the Electrodynamics of Moving Bodies</span><br><span class="line">categories: Physics</span><br><span class="line">date: 1905-06-30 12:00:00</span><br><span class="line"><span class="section">mathjax: true</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line">\begin&#123;eqnarray\<span class="emphasis">*&#125;</span></span><br><span class="line"><span class="emphasis">\nabla\cdot\vec&#123;E&#125;&amp;=&amp;\frac&#123;\rho&#125;&#123;\epsilon_0&#125;\\\\</span></span><br><span class="line"><span class="emphasis">\nabla\cdot\vec&#123;B&#125;&amp;=&amp;0\\\\</span></span><br><span class="line"><span class="emphasis">\nabla\times\vec&#123;E&#125;&amp;=&amp;-\frac&#123;\partial B&#125;&#123;\partial t&#125;\\\\</span></span><br><span class="line"><span class="emphasis">\nabla\times\vec&#123;B&#125;&amp;=&amp;\mu_0\left(\vec&#123;J&#125;+\epsilon_0\frac&#123;\partial E&#125;&#123;\partial t&#125;\right)\\\\</span></span><br><span class="line"><span class="emphasis">\end&#123;eqnarray\*</span>&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="vscode에서-사용하는-docker"><strong>VSCODE에서 사용하는 DOCKER</strong></h2>
-<img src="https://docs.docker.com/engine/images/architecture.svg" /></li>
-<li><p>아래 영상으로 끝이다.</p>
-<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=hWPv9LMlme8&amp;t=1211s">가장 쉽게 배우는 도커</a></p></li>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: On the Electrodynamics of Moving Bodies</span><br><span class="line">categories: Physics</span><br><span class="line">date: 1905-06-30 12:00:00</span><br><span class="line"><span class="section">mathjax: true</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line">\begin{eqnarray\<span class="emphasis">*}</span></span><br><span class="line"><span class="emphasis">\nabla\cdot\vec{E}&amp;=&amp;\frac{\rho}{\epsilon_0}\\\\</span></span><br><span class="line"><span class="emphasis">\nabla\cdot\vec{B}&amp;=&amp;0\\\\</span></span><br><span class="line"><span class="emphasis">\nabla\times\vec{E}&amp;=&amp;-\frac{\partial B}{\partial t}\\\\</span></span><br><span class="line"><span class="emphasis">\nabla\times\vec{B}&amp;=&amp;\mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t}\right)\\\\</span></span><br><span class="line"><span class="emphasis">\end{eqnarray\*</span>}</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -4.977ex" xmlns="http://www.w3.org/2000/svg" width="8.513ex" height="11.086ex" role="img" focusable="false" viewBox="0 -2700 3762.9 4900"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr" transform="translate(0,1950)"><g data-mml-node="mtd"></g><g data-mml-node="mtd"><g data-mml-node="mi"></g><g data-mml-node="mo" transform="translate(277.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g></g><g data-mml-node="mtd" transform="translate(1333.8,0)"></g></g><g data-mml-node="mtr" transform="translate(0,650)"><g data-mml-node="mtd"></g><g data-mml-node="mtd"><g data-mml-node="mi"></g><g data-mml-node="mo" transform="translate(277.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g></g><g data-mml-node="mtd" transform="translate(1333.8,0)"><g data-mml-node="mn"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g><g data-mml-node="mtr" transform="translate(0,-650)"><g data-mml-node="mtd"></g><g data-mml-node="mtd"><g data-mml-node="mi"></g><g data-mml-node="mo" transform="translate(277.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g></g><g data-mml-node="mtd" transform="translate(1333.8,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g></g></g><g data-mml-node="mtr" transform="translate(0,-1950)"><g data-mml-node="mtd"></g><g data-mml-node="mtd"><g data-mml-node="mi"></g><g data-mml-node="mo" transform="translate(277.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g></g><g data-mml-node="mtd" transform="translate(1333.8,0)"><g data-mml-node="msub"><g data-mml-node="mi"></g><g data-mml-node="mn" transform="translate(33,-150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g><g data-mml-node="mo" transform="translate(436.6,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(825.6,0)"><g data-mml-node="mo"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(811,-150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g><g data-mml-node="mo" transform="translate(2040.1,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></g></g></g></svg></mjx-container></li>
 </ul>
+<h2 id="vscode에서-사용하는-docker"><strong>VSCODE에서 사용하는 DOCKER</strong></h2>
+<p><img src="https://docs.docker.com/engine/images/architecture.svg"> - 아래 영상으로 끝이다.</p>
+<pre><code>[가장 쉽게 배우는 도커](https://www.youtube.com/watch?v=hWPv9LMlme8&amp;t=1211s)</code></pre>
 
       
     </div>
