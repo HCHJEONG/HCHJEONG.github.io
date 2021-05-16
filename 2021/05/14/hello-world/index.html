@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://kdydesign.github.io/2017/06/23/hexo-blog/cover.png">
 <meta property="og:image" content="https://docs.docker.com/engine/images/architecture.svg">
 <meta property="article:published_time" content="2021-05-14T10:04:47.079Z">
-<meta property="article:modified_time" content="2021-05-16T00:04:34.107Z">
+<meta property="article:modified_time" content="2021-05-16T00:15:36.030Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://miro.medium.com/max/3836/1*we5v52-t4si1fvhi6pHB1w.png">
@@ -312,7 +312,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-16 09:04:34" itemprop="dateModified" datetime="2021-05-16T09:04:34+09:00">2021-05-16</time>
+        <time title="Modified: 2021-05-16 09:15:36" itemprop="dateModified" datetime="2021-05-16T09:15:36+09:00">2021-05-16</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -341,7 +341,7 @@ mjx-container[display="true"] + br {
 <ul>
 <li>우선 파이썬이 콘다 패키지로 설치되어야 한다.</li>
 <li>VSCODE를 설치해야 한다.</li>
-<li>그리고 VSCODE 파이썬 패키지를 설치해야 한다.</li>
+<li>그리고 VSCODE 파이썬 플러그인을 설치해야 한다.</li>
 </ul>
 <h3 id="가상환경과-디버깅">가상환경과 디버깅</h3>
 <ul>
@@ -360,9 +360,9 @@ mjx-container[display="true"] + br {
 <p><img src="https://miro.medium.com/max/3044/1*hRgOExxt7PP6vBTJFBhHSA.png"></p>
 <ul>
 <li><p>우선 JAVA jdk가 필요하고 jre은 안 된다.</p></li>
-<li><p>그 후 JAVA_HOME 환경변수(C:\Program Files1.8.0_241) 설정과 CLASSPATH 환경변수(%JAVA_HOME%/lib) 설정이 필요하다.</p></li>
+<li><p>그 후 JAVA_HOME 환경변수(C:\Files\Java\jdk1.8.0_241) 설정과 CLASSPATH 환경변수(%JAVA_HOME%\lib) 설정이 필요하다.</p></li>
 <li><p>그 후 ANDROID STUDIO 설치가 반드시 필요하다. 설치 후 FLUTTER 패키지를 설치해야 한다.</p></li>
-<li><p>그리고 FLUTTER SDK를 설치한 후 PATH 환경변수에 'flutter/bin' 폴더가 포함되도록 해야 한다.</p></li>
+<li><p>그리고 FLUTTER SDK를 설치한 후 PATH 환경변수에 'flutter\bin' 폴더가 포함되도록 해야 한다.</p></li>
 <li><p>그리고 flutter doctor를 수행하면 나오는 에러를 제거해야 하고 설명을 그대로 따르면 되는데 jdk 라이센스를 동의하는 것과 Visual Studio C++ 등을 추가로 설치해야 하는 점 등에 유의해야 한다.</p></li>
 <li><p>VSCODE에서 플러터 관련 패키지를 설치한다.</p></li>
 <li><p>여기까지 되면 시스템을 다시 시작해야 한다.</p></li>
@@ -375,7 +375,7 @@ mjx-container[display="true"] + br {
 <li>그리고 node를 설치하고 npm을 설치한 후 npm install hexo-cli -g 실행하여 hexo를 설치한다.</li>
 <li>그 다음 블로그 폴더를 생성할 곳으로 이동해서 터미널로 hexo init {블로그 폴더 이름}을 수행한다.</li>
 <li><p>그리고 그 블로그 폴더로 이동하여 터미널에서 다음을 입력한다.</p>
-<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">git clone https://github.com/{자신의 아이디}/{자신의 아이디}.github.io.git .</span><br></pre></td></tr></table></figure></p></li>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p></li>
 <li>그 후 자신이 인터넷에서 다운로드 받은 theme을 theme 폴더 안에 복사한다.</li>
 <li>그리고 블로그 폴더에 형성된 _config.yaml 속 theme 설정 부분을 theme 폴더 속에 복사한 theme 폴더의 폴더명으로 적어준다.</li>
 <li><p>일단 Github Flavored Markdown 글을 시도해본다.</p>
