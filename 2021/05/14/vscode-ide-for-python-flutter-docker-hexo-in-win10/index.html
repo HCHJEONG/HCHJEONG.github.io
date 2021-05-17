@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://kdydesign.github.io/2017/06/23/hexo-blog/cover.png">
 <meta property="og:image" content="https://docs.docker.com/engine/images/architecture.svg">
 <meta property="article:published_time" content="2021-05-14T10:04:47.079Z">
-<meta property="article:modified_time" content="2021-05-17T00:17:54.477Z">
+<meta property="article:modified_time" content="2021-05-17T01:14:36.319Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://miro.medium.com/max/3836/1*we5v52-t4si1fvhi6pHB1w.png">
@@ -322,7 +322,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-17 09:17:54" itemprop="dateModified" datetime="2021-05-17T09:17:54+09:00">2021-05-17</time>
+        <time title="Modified: 2021-05-17 10:14:36" itemprop="dateModified" datetime="2021-05-17T10:14:36+09:00">2021-05-17</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -446,8 +446,10 @@ mjx-container[display="true"] + br {
 <li>우선 애드센스에 가입하여 세금 정보 등을 입력하고 사이트 주소를 등록한다.</li>
 <li>그리고 애드센스에서 코드 스니펫을 찾아 복사한다.</li>
 <li>그 다음 <code>themes/next/layout/_layout.njk</code> 파일 속 <code>&lt;/head&gt;</code> 직전에 그 스니펫을 붙여넣는다.</li>
-<li>단, NexT 테마와 같은 경우 이러한 adsense 스니펫 추가를 금지하고 있는 것으로 여겨진다. <br></li>
-</ul></li>
+<li><p>단, NexT 테마와 같은 경우 이러한 방식의 adsense 스니펫 추가를 금지하고 있는 것으로 여겨진다. 이 경우 다음의 코드를 이용한다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"</span>&gt;&lt;/script&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml">  (adsbygoogle = window.adsbygoogle || []).push({</span></span><br><span class="line"><span class="xml">    google_ad_client: "ca-pub-xxxxxxxxxxxxxxxxxxxx", # 복사한 스니펫 중 해당 부분을 기입한다.</span></span><br><span class="line"><span class="xml">    enable_page_level_ads: true</span></span><br><span class="line"><span class="xml">  });</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><br></p></li>
 </ul>
 <h3 id="수학식-입력을-위한-mathjax-설정">수학식 입력을 위한 MathJAX 설정</h3>
 <ul>
