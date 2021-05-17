@@ -392,7 +392,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-17 19:21:25" itemprop="dateModified" datetime="2021-05-17T19:21:25+09:00">2021-05-17</time>
+        <time title="Modified: 2021-05-17 19:50:17" itemprop="dateModified" datetime="2021-05-17T19:50:17+09:00">2021-05-17</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -513,9 +513,9 @@ mjx-container[display="true"] + br {
 <li><p>구글 애드센스의 설정 방법을 설명한다.</p>
 <ul>
 <li>우선 애드센스에 가입하여 세금 정보 등을 입력하고 사이트 주소를 등록한다.</li>
-<li>그리고 애드센스에서 코드 스니펫을 찾아 복사한다.</li>
-<li>그 다음 <code>themes/next/layout/_layout.njk</code> 파일 속 <code>&lt;/head&gt;</code> 직전에 그 스니펫을 붙여넣는다.</li>
-<li>단, NexT 테마와 같은 경우 이러한 adsense 스니펫 추가를 금지하고 있는 것으로 여겨진다. <br></li>
+<li>그리고 애드센스에서 광고 단위를 위한 코드 스니펫을 찾아 복사한다.</li>
+<li>그 다음 <code>themes/next/layout/_layout.njk</code> 파일 속 <code>&lt;body&gt;</code> 직전에 그 스니펫을 붙여넣는다.</li>
+<li>단, 광고 단위 삽입용이 아닌 자동광고 생성용 스니펫의 경우에는 이런 방식의 삽입이 어려운 것으로 여겨진다. <br></li>
 </ul></li>
 </ul>
 <h3 id="수학식-입력을-위한-mathjax-설정">수학식 입력을 위한 MathJAX 설정</h3>
@@ -523,7 +523,7 @@ mjx-container[display="true"] + br {
 <li><p>수학식 입력을 위해서 다음의 작업을 해준다.</p>
 <ul>
 <li><p>우선 HEXO의 렌더러를 교체한다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{blog-folder}&gt;npm uninstall hexo-renderer-marked --save</span><br><span class="line">{blog-folder}&gt;npm install hexo-renderer-pandoc --save</span><br><span class="line">{blog-folder}&gt;npm install hexo-theme-next # _config.yaml에서 theme: next 기입</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{blog-folder}&gt;npm uninstall hexo-renderer-marked --save</span><br><span class="line">{blog-folder}&gt;npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure></li>
 <li><p>그리고 LaTeX 서버사이드 렌더러를 설치한다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{blog-folder}&gt;npm install hexo-filter-mathjax</span><br><span class="line">{blog-folder}&gt;hexo clean</span><br></pre></td></tr></table></figure></li>
 <li><p>마지막으로 _config.yaml에서 다음을 기입한다.</p>
