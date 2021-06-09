@@ -28,11 +28,12 @@
 <meta property="og:description" content="VSCODE를 이용한 파이썬 개발  설치  우선 파이썬이 아나콘다 패키지로 설치되어 있을 것을 권장한다. VSCODE를 설치해야 한다. 그리고 VSCODE 파이썬 플러그인을 설치해야 한다.  가상환경과 디버깅  파이썬 프로젝트의 실행환경을 위해서 다음처럼 프로젝트 폴더에서 터미널을 킨 후 가상환경을 구축할 수 있다. 1python -m">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://miro.medium.com/max/3836/1*we5v52-t4si1fvhi6pHB1w.png">
+<meta property="og:image" content="https://docs.anaconda.com/_images/nav-defaults.png">
 <meta property="og:image" content="https://miro.medium.com/max/3044/1*hRgOExxt7PP6vBTJFBhHSA.png">
 <meta property="og:image" content="https://kdydesign.github.io/2017/06/23/hexo-blog/cover.png">
 <meta property="og:image" content="https://docs.docker.com/engine/images/architecture.svg">
 <meta property="article:published_time" content="2021-05-14T10:04:47.079Z">
-<meta property="article:modified_time" content="2021-05-17T23:22:34.502Z">
+<meta property="article:modified_time" content="2021-06-09T05:44:19.895Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://miro.medium.com/max/3836/1*we5v52-t4si1fvhi6pHB1w.png">
@@ -324,7 +325,7 @@ mjx-container[display="true"] + br {
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-05-18 08:22:34" itemprop="dateModified" datetime="2021-05-18T08:22:34+09:00">2021-05-18</time>
+        <time title="Modified: 2021-06-09 14:44:19" itemprop="dateModified" datetime="2021-06-09T14:44:19+09:00">2021-06-09</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -365,7 +366,8 @@ mjx-container[display="true"] + br {
 <p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="string">"python.pythonPath"</span>: <span class="string">"venv\\Scripts\\python.exe"</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure></p></li>
 <li><p>다른 프로젝트 개발을 하게 될 때 'deactivate'를 해서 가상환경에서 빠져나온다.</p></li>
 <li><p>가상환경에 설치된 패키지들은 다음의 방법으로 기록하였다가 설치할 수 있다.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(example) C:\\project\example&gt;pip <span class="built_in">list</span></span><br><span class="line">(example) C:\\project\example&gt;pip freeze &gt; requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip install -r requirements.txt</span><br><span class="line">(example) C:\project\example&gt;pip uninstall -r requirements.txt</span><br></pre></td></tr></table></figure></li>
+<li><p>가상환경의 관리를 GUI로 하고자 한다면 ANACONDA.NAVIGATOR의 Environment 메뉴를 이용하는 것이 좋고 또 권장된다. <img src="https://docs.anaconda.com/_images/nav-defaults.png"></p></li>
 </ul>
 <h2 id="vscode를-이용한-플러터-개발"><strong>VSCODE를 이용한 플러터 개발</strong></h2>
 <p><img src="https://miro.medium.com/max/3044/1*hRgOExxt7PP6vBTJFBhHSA.png"></p>
@@ -386,10 +388,10 @@ mjx-container[display="true"] + br {
 <p><img src="https://kdydesign.github.io/2017/06/23/hexo-blog/cover.png"></p>
 <h3 id="git-node-hexo-설치">Git, Node, Hexo 설치</h3>
 <ul>
-<li>깃을 설치한다.</li>
-<li>우선 깃허브 가입 후 새 리포지토리를 {자신의 아이디}.github.io 이름으로 만든다.</li>
-<li>그리고 node를 설치하고 npm을 설치한 후 npm install hexo-cli -g 실행하여 hexo를 설치한다.</li>
-<li>그 다음 블로그 폴더를 생성할 곳으로 이동해서 터미널로 hexo init {블로그 폴더 이름}을 수행한다.</li>
+<li><p>깃을 설치한다.</p></li>
+<li><p>우선 깃허브 가입 후 새 리포지토리를 {자신의 아이디}.github.io 이름으로 만든다.</p></li>
+<li><p>그리고 node를 설치하고 npm을 설치한 후 npm install hexo-cli -g 실행하여 hexo를 설치한다.</p></li>
+<li><p>그 다음 블로그 폴더를 생성할 곳으로 이동해서 터미널로 hexo init {블로그 폴더 이름}을 수행한다.</p></li>
 <li><p>그리고 그 블로그 폴더로 이동하여 터미널에서 다음을 입력한다.</p>
 <p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p></li>
 </ul>
