@@ -367,7 +367,7 @@ mjx-container[display="true"] + br {
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/28/json/" class="post-title-link" itemprop="url">json</a>
+          <a href="/2021/10/28/json/" class="post-title-link" itemprop="url">json as a string</a>
         </h2>
 
         <div class="post-meta-container">
@@ -379,7 +379,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-10-28 08:32:49 / Modified: 08:51:56" itemprop="dateCreated datePublished" datetime="2021-10-28T08:32:49+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 08:32:49 / Modified: 08:59:00" itemprop="dateCreated datePublished" datetime="2021-10-28T08:32:49+09:00">2021-10-28</time>
     </span>
 
   
@@ -399,9 +399,9 @@ mjx-container[display="true"] + br {
 <pre><code>- JSON could be parsed into an ordinary javascript object or python-dictionary-like thing</code></pre>
 <h1 id="json-in-python">JSON in python</h1>
 <pre><code>- json package matters
-- this package could be used for converting JSON string into a special object or instance from a special python class</code></pre>
-<p>```import json</p>
-<p>foo = '{"a":"1", "b":[1, 2, 3]}' ba = json.loads(foo) print(type(ba)) goo = json.dumps(ba) print(type(goo)) print(goo)```</p>
+- this package could be used for converting JSON string into a special object or instance from a special python class
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line"></span><br><span class="line">foo = &#x27;&#123;&quot;a&quot;:&quot;1&quot;, &quot;b&quot;:[1, 2, 3]&#125;&#x27;</span><br><span class="line">ba = json.loads(foo)</span><br><span class="line">print(type(ba))</span><br><span class="line">goo = json.dumps(ba)</span><br><span class="line">print(type(goo))</span><br><span class="line">print(goo)</span><br></pre></td></tr></table></figure></code></pre>
 
       
     </div>
