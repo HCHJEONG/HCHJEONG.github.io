@@ -307,7 +307,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-10-28 08:42:38 / Modified: 08:46:44" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 08:42:38 / Modified: 10:54:19" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
     </span>
 
   
@@ -328,6 +328,7 @@ mjx-container[display="true"] + br {
 <ul>
 <li>Of course, in this case, the input data is a set of matrices</li>
 </ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">col = int(input(&#x27;no of cols: &#x27;))</span><br><span class="line">filter = int(input(&#x27;size of filter: &#x27;))</span><br><span class="line">stride = int(input(&#x27;size of stride: &#x27;))</span><br><span class="line"></span><br><span class="line">idx = filter</span><br><span class="line">i = 0</span><br><span class="line">while True:</span><br><span class="line">    print(idx)</span><br><span class="line">    print()</span><br><span class="line">    i = i + 1</span><br><span class="line">    print(i)</span><br><span class="line">    print()</span><br><span class="line">    idx = idx + stride</span><br><span class="line">    if idx &gt;= col :</span><br><span class="line">        print(f&quot;Your input col dimension is &#123;col&#125;...\nand the kernel size is &#123;filter&#125;... \nand the stride is &#123;stride&#125;...&quot;)</span><br><span class="line">        print(f&quot;end at &#123;i&#125;... This is the next layer input col dimension...&quot;)</span><br><span class="line">        break </span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -379,7 +380,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-10-28 08:32:49 / Modified: 09:11:47" itemprop="dateCreated datePublished" datetime="2021-10-28T08:32:49+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 08:32:49 / Modified: 12:28:45" itemprop="dateCreated datePublished" datetime="2021-10-28T08:32:49+09:00">2021-10-28</time>
     </span>
 
   
@@ -396,10 +397,11 @@ mjx-container[display="true"] + br {
 <pre><code>- JSON is not a special object in any language
 - JSON is just a special format of string which could be stored in any txt file</code></pre>
 <h2 id="json-in-javascript">JSON in javascript</h2>
-<pre><code>- JSON could be parsed into an ordinary javascript object or python-dictionary-like thing</code></pre>
+<pre><code>- JSON could be parsed into just an ordinary javascript object or python-dictionary-like thing by `JSON.parse`
+- &#39;JSON.stringify` could be used for converting a javascript object into a json string</code></pre>
 <h2 id="json-in-python">JSON in python</h2>
-<pre><code>- json package matters
-- this package could be used for converting JSON string into a special object or instance from a special python class</code></pre>
+<pre><code>- `json` package matters
+- this package could be used for converting JSON string into not a special object or instance from a special python class, but just an ordinary python dictionary.</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line"></span><br><span class="line">foo = &#x27;&#123;&quot;a&quot;:&quot;1&quot;, &quot;b&quot;:[1, 2, 3]&#125;&#x27;</span><br><span class="line">ba = json.loads(foo)</span><br><span class="line">print(type(ba))</span><br><span class="line">goo = json.dumps(ba)</span><br><span class="line">print(type(goo))</span><br><span class="line">print(goo)</span><br></pre></td></tr></table></figure>
 
       
