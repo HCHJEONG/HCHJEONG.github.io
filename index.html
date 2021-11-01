@@ -467,10 +467,16 @@ mjx-container[display="true"] + br {
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-10-28 08:42:38 / Modified: 10:54:19" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 08:42:38" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-01 15:06:41" itemprop="dateModified" datetime="2021-11-01T15:06:41+09:00">2021-11-01</time>
+      </span>
 
   
 </div>
@@ -482,13 +488,15 @@ mjx-container[display="true"] + br {
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!</h1>
+          <h1 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</h1>
 <ul>
 <li>After a layer, all the channels are summed up as to each neuron in case of 2D</li>
 </ul>
 <h2 id="however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</h2>
 <ul>
-<li>Of course, in this case, the input data is a set of matrices</li>
+<li><p>Of course, in this case, the input data is a set of matrices</p></li>
+<li><p>In case of rank 3 dataset, conv1D as well as conv2D and conv3D are all possible.</p></li>
+<li><p>All channels can be summed up or stacked down, which depends on which shape you want for the next traning layer.</p></li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">col = int(input(&#x27;no of cols: &#x27;))</span><br><span class="line">filter = int(input(&#x27;size of filter: &#x27;))</span><br><span class="line">stride = int(input(&#x27;size of stride: &#x27;))</span><br><span class="line"></span><br><span class="line">idx = filter</span><br><span class="line">i = 0</span><br><span class="line">while True:</span><br><span class="line">    print(idx)</span><br><span class="line">    print()</span><br><span class="line">    i = i + 1</span><br><span class="line">    print(i)</span><br><span class="line">    print()</span><br><span class="line">    idx = idx + stride</span><br><span class="line">    if idx &gt;= col :</span><br><span class="line">        print(f&quot;Your input col dimension is &#123;col&#125;...\nand the kernel size is &#123;filter&#125;... \nand the stride is &#123;stride&#125;...&quot;)</span><br><span class="line">        print(f&quot;end at &#123;i&#125;... This is the next layer input col dimension...&quot;)</span><br><span class="line">        break </span><br></pre></td></tr></table></figure>
 

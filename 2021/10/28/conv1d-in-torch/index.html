@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta name="description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for the next layer, all th">
+<meta name="description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!">
 <meta property="og:url" content="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/index.html">
 <meta property="og:site_name" content="ANGUK PARTNERS">
-<meta property="og:description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for the next layer, all th">
+<meta property="og:description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-27T23:42:38.000Z">
-<meta property="article:modified_time" content="2021-10-28T01:54:19.361Z">
+<meta property="article:modified_time" content="2021-11-01T06:06:41.950Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#convolution-1d-multilayers-structure-is-totally-differnt-from-2d"><span class="nav-number">1.</span> <span class="nav-text">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset"><span class="nav-number">1.</span> <span class="nav-text">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -199,10 +199,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-10-28 08:42:38 / Modified: 10:54:19" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 08:42:38" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-01 15:06:41" itemprop="dateModified" datetime="2021-11-01T15:06:41+09:00">2021-11-01</time>
+      </span>
 
   
 </div>
@@ -214,13 +220,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!</h1>
+        <h1 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</h1>
 <ul>
 <li>After a layer, all the channels are summed up as to each neuron in case of 2D</li>
 </ul>
 <h2 id="however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</h2>
 <ul>
-<li>Of course, in this case, the input data is a set of matrices</li>
+<li><p>Of course, in this case, the input data is a set of matrices</p></li>
+<li><p>In case of rank 3 dataset, conv1D as well as conv2D and conv3D are all possible.</p></li>
+<li><p>All channels can be summed up or stacked down, which depends on which shape you want for the next traning layer.</p></li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">col = int(input(&#x27;no of cols: &#x27;))</span><br><span class="line">filter = int(input(&#x27;size of filter: &#x27;))</span><br><span class="line">stride = int(input(&#x27;size of stride: &#x27;))</span><br><span class="line"></span><br><span class="line">idx = filter</span><br><span class="line">i = 0</span><br><span class="line">while True:</span><br><span class="line">    print(idx)</span><br><span class="line">    print()</span><br><span class="line">    i = i + 1</span><br><span class="line">    print(i)</span><br><span class="line">    print()</span><br><span class="line">    idx = idx + stride</span><br><span class="line">    if idx &gt;= col :</span><br><span class="line">        print(f&quot;Your input col dimension is &#123;col&#125;...\nand the kernel size is &#123;filter&#125;... \nand the stride is &#123;stride&#125;...&quot;)</span><br><span class="line">        print(f&quot;end at &#123;i&#125;... This is the next layer input col dimension...&quot;)</span><br><span class="line">        break </span><br></pre></td></tr></table></figure>
 
