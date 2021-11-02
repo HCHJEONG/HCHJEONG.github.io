@@ -20,27 +20,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta name="description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
+<meta name="description" content="# BERT PRETRAINING      - Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함      - 이는 이미 word embedding이 이루어졌음을 전제로 함  # BERT FINE-TUNING      - 선학습 결과로 인코더 내부의 가중치들이">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!">
-<meta property="og:url" content="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/index.html">
+<meta property="og:title" content="bert">
+<meta property="og:url" content="http://hchjeong.github.io/2021/11/02/bert/index.html">
 <meta property="og:site_name" content="ANGUK PARTNERS">
-<meta property="og:description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
+<meta property="og:description" content="# BERT PRETRAINING      - Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함      - 이는 이미 word embedding이 이루어졌음을 전제로 함  # BERT FINE-TUNING      - 선학습 결과로 인코더 내부의 가중치들이">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-27T23:42:38.000Z">
-<meta property="article:modified_time" content="2021-11-01T06:06:41.950Z">
+<meta property="article:published_time" content="2021-11-02T03:10:16.000Z">
+<meta property="article:modified_time" content="2021-11-02T03:14:59.485Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/">
+<link rel="canonical" href="http://hchjeong.github.io/2021/11/02/bert/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;hchjeong.github.io&#x2F;2021&#x2F;10&#x2F;28&#x2F;conv1d-in-torch&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;10&#x2F;28&#x2F;conv1d-in-torch&#x2F;&quot;,&quot;title&quot;:&quot;CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;hchjeong.github.io&#x2F;2021&#x2F;11&#x2F;02&#x2F;bert&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;11&#x2F;02&#x2F;bert&#x2F;&quot;,&quot;title&quot;:&quot;bert&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D! | ANGUK PARTNERS</title><script src="/js/config.js"></script>
+<title>bert | ANGUK PARTNERS</title><script src="/js/config.js"></script>
   
 
 
@@ -106,7 +106,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -119,7 +119,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset"><span class="nav-number">1.</span> <span class="nav-text">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -176,7 +175,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/02/bert/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -189,7 +188,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!
+          bert
         </h1>
 
         <div class="post-meta-container">
@@ -199,16 +198,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-10-28 08:42:38" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
+      <time title="Created: 2021-11-02 12:10:16 / Modified: 12:14:59" itemprop="dateCreated datePublished" datetime="2021-11-02T12:10:16+09:00">2021-11-02</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-01 15:06:41" itemprop="dateModified" datetime="2021-11-01T15:06:41+09:00">2021-11-01</time>
-      </span>
 
   
 </div>
@@ -220,17 +213,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</h1>
-<ul>
-<li>After a layer, all the channels are summed up as to each neuron in case of 2D</li>
-</ul>
-<h2 id="however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</h2>
-<ul>
-<li><p>Of course, in this case, the input data is a set of matrices</p></li>
-<li><p>In case of rank 3 dataset, conv1D as well as conv2D and conv3D are all possible.</p></li>
-<li><p>All channels can be summed up or stacked down, which depends on which shape you want for the next traning layer.</p></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">col = int(input(&#x27;no of cols: &#x27;))</span><br><span class="line">filter = int(input(&#x27;size of filter: &#x27;))</span><br><span class="line">stride = int(input(&#x27;size of stride: &#x27;))</span><br><span class="line"></span><br><span class="line">idx = filter</span><br><span class="line">i = 0</span><br><span class="line">while True:</span><br><span class="line">    print(idx)</span><br><span class="line">    print()</span><br><span class="line">    i = i + 1</span><br><span class="line">    print(i)</span><br><span class="line">    print()</span><br><span class="line">    idx = idx + stride</span><br><span class="line">    if idx &gt;= col :</span><br><span class="line">        print(f&quot;Your input col dimension is &#123;col&#125;...\nand the kernel size is &#123;filter&#125;... \nand the stride is &#123;stride&#125;...&quot;)</span><br><span class="line">        print(f&quot;end at &#123;i&#125;... This is the next layer input col dimension...&quot;)</span><br><span class="line">        break </span><br></pre></td></tr></table></figure>
+        <pre><code># BERT PRETRAINING
+
+    - Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함
+
+    - 이는 이미 word embedding이 이루어졌음을 전제로 함
+
+# BERT FINE-TUNING
+
+    - 선학습 결과로 인코더 내부의 가중치들이 최적화됨
+
+    - 이 가중치들은 문장 사이의 관계와 단어들 사이의 관계를 함축하고 있음
+
+    - 이 bert 모델을 가지고 decoder 부분을 이어붙여서 추가 학습을 하는 것이 transfer learing </code></pre>
 
     </div>
 
@@ -244,14 +239,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/10/28/json/" rel="prev" title="json as a string">
-                  <i class="fa fa-chevron-left"></i> json as a string
+                <a href="/2021/10/29/vi-for-linux/" rel="prev" title="vi-for-linux">
+                  <i class="fa fa-chevron-left"></i> vi-for-linux
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/10/28/rnn/" rel="next" title="rnn-attention-transformer">
-                  rnn-attention-transformer <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
