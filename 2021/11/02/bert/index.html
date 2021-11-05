@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta name="description" content="BERT PRETRAINING   - Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함    - 이는 이미 word embedding이 이루어졌음을 전제로 함 BERT FINE-TUNING   - 선학습 결과로 인코더 내부의 가중치들이 최적화됨    - 이 가중">
+<meta name="description" content="BERT PRETRAINING  Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함 이는 이미 word embedding이 이루어졌음을 전제로 함  BERT FINE-TUNING  선학습 결과로 인코더 내부의 가중치들이 최적화됨 이 가중치들은 문장 사이의 관계와">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bert">
 <meta property="og:url" content="http://hchjeong.github.io/2021/11/02/bert/index.html">
 <meta property="og:site_name" content="ANGUK PARTNERS">
-<meta property="og:description" content="BERT PRETRAINING   - Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함    - 이는 이미 word embedding이 이루어졌음을 전제로 함 BERT FINE-TUNING   - 선학습 결과로 인코더 내부의 가중치들이 최적화됨    - 이 가중">
+<meta property="og:description" content="BERT PRETRAINING  Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함 이는 이미 word embedding이 이루어졌음을 전제로 함  BERT FINE-TUNING  선학습 결과로 인코더 내부의 가중치들이 최적화됨 이 가중치들은 문장 사이의 관계와">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-11-02T03:10:16.000Z">
-<meta property="article:modified_time" content="2021-11-05T01:30:20.965Z">
+<meta property="article:modified_time" content="2021-11-05T01:34:33.170Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 
@@ -207,7 +207,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-05 10:30:20" itemprop="dateModified" datetime="2021-11-05T10:30:20+09:00">2021-11-05</time>
+        <time title="Modified: 2021-11-05 10:34:33" itemprop="dateModified" datetime="2021-11-05T10:34:33+09:00">2021-11-05</time>
       </span>
 
   
@@ -221,15 +221,16 @@
     
     <div class="post-body" itemprop="articleBody">
         <h2 id="bert-pretraining">BERT PRETRAINING</h2>
-<pre><code>  - Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함
-
-  - 이는 이미 word embedding이 이루어졌음을 전제로 함</code></pre>
+<ul>
+<li><p>Transformer 모델의 encoder 부분을 이용하여 두 문장 사이의 관계와 빈 칸 채우기 과제를 양방향으로 비지도적 학습을 함</p></li>
+<li><p>이는 이미 word embedding이 이루어졌음을 전제로 함</p></li>
+</ul>
 <h2 id="bert-fine-tuning">BERT FINE-TUNING</h2>
-<pre><code>  - 선학습 결과로 인코더 내부의 가중치들이 최적화됨
-
-  - 이 가중치들은 문장 사이의 관계와 단어들 사이의 관계를 함축하고 있음
-
-  - 이 bert 모델을 가지고 decoder 부분을 이어붙여서 추가 학습을 하는 것이 transfer learing </code></pre>
+<ul>
+<li><p>선학습 결과로 인코더 내부의 가중치들이 최적화됨</p></li>
+<li><p>이 가중치들은 문장 사이의 관계와 단어들 사이의 관계를 함축하고 있음</p></li>
+<li><p>이 bert 모델을 가지고 decoder 부분을 이어붙여서 추가 학습을 하는 것이 transfer learing</p></li>
+</ul>
 
     </div>
 
