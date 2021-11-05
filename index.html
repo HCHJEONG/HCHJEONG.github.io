@@ -183,7 +183,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/05/vue-vuetify/" class="post-title-link" itemprop="url">vue-vuetify</a>
+          <a href="/2021/11/05/vue-vuetify/" class="post-title-link" itemprop="url">vue-vuetify-basics</a>
         </h2>
 
         <div class="post-meta-container">
@@ -195,7 +195,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-05 10:22:49 / Modified: 10:33:04" itemprop="dateCreated datePublished" datetime="2021-11-05T10:22:49+09:00">2021-11-05</time>
+      <time title="Created: 2021-11-05 10:22:49 / Modified: 11:09:58" itemprop="dateCreated datePublished" datetime="2021-11-05T10:22:49+09:00">2021-11-05</time>
     </span>
 
   
@@ -208,9 +208,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="vue-basics">VUE BASICS</h2>
+          <h2 id="v-bind-v-on-v-model">V-BIND / V-ON / V-MODEL</h2>
 <ul>
-<li>v-bind:{document element name}="{vue instance variable name}"</li>
+<li><p><code>v-bind:&#123;html document element name&#125; = "&#123;vue instance variable name&#125;"</code></p>
+<ul>
+<li><p>This is used for binding reactively and dynamically</p></li>
+<li><p>In this case, the html document element name could be the child component's instance variable name</p></li>
+<li><p>Without <code>v-bind:</code>:</p>
+<ul>
+<li><p>the value of the element as well as the child component's instance variable does not vary reactively</p></li>
+<li><p>the content within the quote signs will not be evaluated as javascript expression</p></li>
+</ul></li>
+</ul></li>
+<li><p><code>v-on:&#123;html document event name&#125; = "&#123;vue instance function name&#125;"</code></p></li>
+<li><p><code>v-model = "&#123;name of vue instance variable that vary with vue instance function&#125;"</code></p></li>
 </ul>
 
       
