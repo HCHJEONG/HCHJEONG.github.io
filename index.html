@@ -195,7 +195,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-05 10:22:49 / Modified: 11:09:58" itemprop="dateCreated datePublished" datetime="2021-11-05T10:22:49+09:00">2021-11-05</time>
+      <time title="Created: 2021-11-05 10:22:49 / Modified: 11:56:07" itemprop="dateCreated datePublished" datetime="2021-11-05T10:22:49+09:00">2021-11-05</time>
     </span>
 
   
@@ -222,6 +222,16 @@
 </ul></li>
 <li><p><code>v-on:&#123;html document event name&#125; = "&#123;vue instance function name&#125;"</code></p></li>
 <li><p><code>v-model = "&#123;name of vue instance variable that vary with vue instance function&#125;"</code></p></li>
+</ul>
+<h2 id="slot">SLOT</h2>
+<ul>
+<li><p>V-SLOT: v-directives within template component in parent component</p></li>
+<li><p>SLOT: vue component name within child component</p></li>
+</ul>
+<h2 id="slot-with-v-bind">SLOT WITH V-BIND</h2>
+<ul>
+<li><p>PARENT: <code>&lt;&#123;child component name&#125;&gt;&lt;template v-slot:&#123;slot name&#125; = "slotProps"&gt; ... &lt;/template&gt;&lt;/&#123;child component name&#125;&gt;</code></p></li>
+<li><p>CHILD: <code>&lt;slot name = "&#123;slot name&#125;" v-bind:&#123;element name of property&#125; = "&#123;an object key in slotProps object&#125;"&gt;</code></p></li>
 </ul>
 
       
