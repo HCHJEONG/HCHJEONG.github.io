@@ -195,7 +195,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-05 15:22:06 / Modified: 15:35:26" itemprop="dateCreated datePublished" datetime="2021-11-05T15:22:06+09:00">2021-11-05</time>
+      <time title="Created: 2021-11-05 15:22:06 / Modified: 15:35:49" itemprop="dateCreated datePublished" datetime="2021-11-05T15:22:06+09:00">2021-11-05</time>
     </span>
 
   
@@ -812,10 +812,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-10-28 08:23:25 / Modified: 08:32:35" itemprop="dateCreated datePublished" datetime="2021-10-28T08:23:25+09:00">2021-10-28</time>
+      <time title="Created: 2021-10-28 08:23:25" itemprop="dateCreated datePublished" datetime="2021-10-28T08:23:25+09:00">2021-10-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-07 09:00:41" itemprop="dateModified" datetime="2021-11-07T09:00:41+09:00">2021-11-07</time>
+      </span>
 
   
 </div>
@@ -827,10 +833,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="ssh">SSH?</h1>
-<pre><code>- Public / Private Key Pair using encryption technology like SHA256 widely accepted since 1970&#39;s</code></pre>
-<h1 id="key-generation">Key Generation</h1>
-<pre><code>- at `/home/user/.ssh/ using linux utility</code></pre>
+          <h2 id="ssh">SSH?</h2>
+<ul>
+<li><p>Public / Private Key Pair using encryption technology like SHA256 widely accepted since 1970's</p></li>
+<li><p>For example, in case of Github, you can register your one public key at ACCOUNT SETTING, which means this works in relation of your github account (not project-wise) to your specific computer and you should register at every computer respectively</p></li>
+</ul>
+<h2 id="key-generation">Key Generation</h2>
+<ul>
+<li><p>at `/home/user/.ssh/ using linux utility</p></li>
+<li><p>`ssh-keygen -t rsa -b 4096 -C "hcjeong@kakao.com"</p></li>
+<li><p><code>Enter passphrase</code></p></li>
+<li><p>This process will produce two files which contains public key and private key respectively</p></li>
+<li><p>Moreover, this will produce <code>key fingerprint</code> and <code>key randomart image</code></p></li>
+<li><p>You need to check <code>Agent id</code> by using <code>eval "$(ssh-agent -s)"</code></p></li>
+<li><p><code>ssh-add ~/.ssh/id_rsa</code>: This will complete the process</p></li>
+<li><p>You can copy public key by <code>clip &lt; ~/.ssh/id_rsa.pub</code></p>
+<figure>
+<img src="./github_ssh.png" alt="screenshot" /><figcaption aria-hidden="true">screenshot</figcaption>
+</figure></li>
+</ul>
 
       
     </div>
