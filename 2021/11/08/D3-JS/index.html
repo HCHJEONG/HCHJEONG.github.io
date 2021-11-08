@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
+<meta name="description" content="D3 JS as DOM MANIPULATOR Use CSS Selector 12345678d3.select(&amp;#123;existing element name or id&amp;#125;)  .selectAll(&amp;#123;yet not existing element selector&amp;#125;)  .data(Array&lt;Obj&gt;[, Obj &#x3D;&gt; Ob">
+<meta property="og:type" content="article">
+<meta property="og:title" content="D3-JS">
+<meta property="og:url" content="http://hchjeong.github.io/2021/11/08/D3-JS/index.html">
+<meta property="og:site_name" content="ANGUK PARTNERS">
+<meta property="og:description" content="D3 JS as DOM MANIPULATOR Use CSS Selector 12345678d3.select(&amp;#123;existing element name or id&amp;#125;)  .selectAll(&amp;#123;yet not existing element selector&amp;#125;)  .data(Array&lt;Obj&gt;[, Obj &#x3D;&gt; Ob">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-08T06:36:46.000Z">
+<meta property="article:modified_time" content="2021-11-08T07:04:36.262Z">
+<meta property="article:author" content="Heechan Jeong">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://hchjeong.github.io/2021/11/08/D3-JS/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;hchjeong.github.io&#x2F;2021&#x2F;11&#x2F;08&#x2F;D3-JS&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;11&#x2F;08&#x2F;D3-JS&#x2F;&quot;,&quot;title&quot;:&quot;D3-JS&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>D3-JS | ANGUK PARTNERS</title><script src="/js/config.js"></script>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript><meta name="google-site-verification" content="gf7brwkPWUFDVsZlMiPsYcsKOjr_irdxG_pluNxQ66M" />
+<meta name="naver-site-verification" content="145e8a587f6eddaabff92b987d9cab8d13205700" />
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- firstAdsense -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9022646383881973"
+     data-ad-slot="4785795692"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">ANGUK PARTNERS</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-js-as-dom-manipulator"><span class="nav-number">1.</span> <span class="nav-text">D3 JS as DOM MANIPULATOR</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#use-css-selector"><span class="nav-number">1.1.</span> <span class="nav-text">Use CSS Selector</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-js-as-svg-element-creator"><span class="nav-number">2.</span> <span class="nav-text">D3 JS as SVG element Creator</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ds-js-as-data-manipulator"><span class="nav-number"></span> <span class="nav-text">DS JS as DATA MANIPULATOR</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-scale"><span class="nav-number">1.</span> <span class="nav-text">D3-SCALE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-axis"><span class="nav-number">2.</span> <span class="nav-text">D3-AXIS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-in-vue"><span class="nav-number">3.</span> <span class="nav-text">D3 in VUE</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Heechan Jeong</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/08/D3-JS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          D3-JS
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-08 15:36:46 / Modified: 16:04:36" itemprop="dateCreated datePublished" datetime="2021-11-08T15:36:46+09:00">2021-11-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="d3-js-as-dom-manipulator">D3 JS as DOM MANIPULATOR</h2>
+<h3 id="use-css-selector">Use CSS Selector</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">d3.select(&#123;existing element name or id&#125;)</span><br><span class="line">  .selectAll(&#123;yet not existing element selector&#125;)</span><br><span class="line">  .data(Array&lt;Obj&gt;[, Obj =&gt; Obj.key])</span><br><span class="line">  .enter() for selecting missing data or .exit() for selecting abundant that is treated one by one below</span><br><span class="line">  .append() / remove() for adding or deleting elements having selected data</span><br><span class="line">  .classed()</span><br><span class="line">  .style()</span><br><span class="line">  .text(data =&gt; data.value)</span><br></pre></td></tr></table></figure>
+<h2 id="d3-js-as-svg-element-creator">D3 JS as SVG element Creator</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">line = d3.line().x().y()</span><br><span class="line">&lt;svg&gt;&lt;path d = &quot;line(dataset)&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="ds-js-as-data-manipulator">DS JS as DATA MANIPULATOR</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">d3.nest().key(item =&gt; item.category).entries()</span><br><span class="line">d3.nest().object()</span><br><span class="line">d3.hierachy().children()</span><br><span class="line">d3.hierachy().decendants()</span><br><span class="line">d3.hierachy().leaves()</span><br><span class="line">d3.hierachy().count()</span><br><span class="line">d3.hierachy().sum()</span><br><span class="line">d3.hierachy().sort()</span><br></pre></td></tr></table></figure>
+<h2 id="d3-scale">D3-SCALE</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d3.scaleTime().ticks(10).map(d =&gt; dateScale(d)).domain([]).range([]) // map for normalizing</span><br><span class="line">d3.scaleBand.domain([]).rangeRound([]).padding().scalebandwidth()</span><br></pre></td></tr></table></figure>
+<h2 id="d3-axis">D3-AXIS</h2>
+<h2 id="d3-in-vue">D3 in VUE</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;svg-container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">svg</span></span></span><br><span class="line"><span class="tag">      <span class="attr">width</span>=<span class="string">&quot;300px&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">height</span>=<span class="string">&quot;300px&quot;</span></span></span><br><span class="line"><span class="tag">      @<span class="attr">click</span>=<span class="string">&quot;addPoint&quot;</span></span></span><br><span class="line"><span class="tag">      @<span class="attr">contextmenu.prevent</span>=<span class="string">&quot;points = []&quot;</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">path</span></span></span><br><span class="line"><span class="tag">        <span class="attr">fill</span>=<span class="string">&quot;transparent&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">storke</span>=<span class="string">&quot;#fffff&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">stroke-width</span>=<span class="string">&quot;1&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:d</span>=<span class="string">&quot;lineGenerator(points)&quot;</span></span></span><br><span class="line"><span class="tag">      /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">circle</span></span></span><br><span class="line"><span class="tag">        <span class="attr">v-for</span>=<span class="string">&quot;(item, index) in points&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:key</span>=<span class="string">&quot;index&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">r</span>=<span class="string">&quot;10&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:cx</span>=<span class="string">&quot;item.x&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:cy</span>=<span class="string">&quot;item.y&quot;</span></span></span><br><span class="line"><span class="tag">      /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> d3 <span class="keyword">from</span> <span class="string">&#x27;d3&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;Svectorg&#x27;</span>,</span><br><span class="line">  <span class="function"><span class="title">data</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">points</span>: [</span><br><span class="line">        &#123; <span class="attr">x</span>: <span class="number">200</span>, <span class="attr">y</span>: <span class="number">500</span> &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">computed</span>: &#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="title">lineGenerator</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> d3.line().x(<span class="function">(<span class="params">item</span>) =&gt;</span> item.x).y(<span class="function">(<span class="params">item</span>) =&gt;</span> item.y);</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="title">addPoint</span>(<span class="params">ev</span>)</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> &#123;</span><br><span class="line">        <span class="attr">layerX</span>: x,</span><br><span class="line">        <span class="attr">layerY</span>: y,</span><br><span class="line">      &#125; = ev;</span><br><span class="line">      <span class="built_in">this</span>.points.push(&#123; x, y &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/11/05/unpacking-in-python-and-destruction-in-javascript/" rel="prev" title="unpacking in python and destruction in javascript">
+                  <i class="fa fa-chevron-left"></i> unpacking in python and destruction in javascript
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/11/08/p5-js/" rel="next" title="p5-js">
+                  p5-js <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+<script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Heechan Jeong</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
