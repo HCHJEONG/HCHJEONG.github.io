@@ -127,7 +127,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,6 +161,72 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/08/vue-api-lazy-loading/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/08/vue-api-lazy-loading/" class="post-title-link" itemprop="url">vue api lazy loading</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-08 16:05:38 / Modified: 16:06:51" itemprop="dateCreated datePublished" datetime="2021-11-08T16:05:38+09:00">2021-11-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="intersectionobserver-class">IntersectionObserver Class</h2>
+<h2 id="making-elements-for-data-should-precede-fetching-relevant-data-from-api">Making elements for data should precede fetching relevant data from api</h2>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -926,95 +992,6 @@
 <pre><code>- `json` package matters
 - this package could be used for converting JSON string into neither a special object nor instance from a special python class, but just an ordinary python dictionary.</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line"></span><br><span class="line">foo = &#x27;&#123;&quot;a&quot;:&quot;1&quot;, &quot;b&quot;:[1, 2, 3]&#125;&#x27;</span><br><span class="line">ba = json.loads(foo)</span><br><span class="line">print(type(ba))</span><br><span class="line">goo = json.dumps(ba)</span><br><span class="line">print(type(goo))</span><br><span class="line">print(goo)</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/10/28/ssh/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Heechan Jeong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ANGUK PARTNERS">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/28/ssh/" class="post-title-link" itemprop="url">Github and SSH key setting</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-10-28 08:23:25" itemprop="dateCreated datePublished" datetime="2021-10-28T08:23:25+09:00">2021-10-28</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-07 09:14:33" itemprop="dateModified" datetime="2021-11-07T09:14:33+09:00">2021-11-07</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="ssh">SSH?</h2>
-<ul>
-<li><p>Public / Private Key Pair using encryption technology like SHA256 widely accepted since 1970's</p></li>
-<li><p>For example, in case of Github, you can register your one public key at ACCOUNT SETTING, which means this works in relation of your github account (not project-wise) to your specific computer and you should register at every computer respectively</p></li>
-</ul>
-<h2 id="key-generation">Key Generation</h2>
-<ul>
-<li><p>at `/home/user/.ssh/ using linux utility</p></li>
-<li><p>`ssh-keygen -t rsa -b 4096 -C "hcjeong@kakao.com"</p></li>
-<li><p><code>Enter passphrase</code></p></li>
-<li><p>This process will produce two files which contains public key and private key respectively</p></li>
-<li><p>Moreover, this will produce <code>key fingerprint</code> and <code>key randomart image</code></p></li>
-<li><p>You need to check <code>Agent id</code> by using <code>eval "$(ssh-agent -s)"</code></p></li>
-<li><p><code>ssh-add ~/.ssh/id_rsa</code>: This will complete the process</p></li>
-<li><p>You can copy public key by <code>clip &lt; ~/.ssh/id_rsa.pub</code></p>
-<figure>
-<img src="https://user-images.githubusercontent.com/69304415/140627429-3dc9603d-b164-40ce-ac6f-331da26cdb7e.png" alt="screenshot" /><figcaption aria-hidden="true">screenshot</figcaption>
-</figure></li>
-</ul>
 
       
     </div>
