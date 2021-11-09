@@ -239,7 +239,7 @@ mjx-container[display="true"] + br {
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -273,6 +273,80 @@ mjx-container[display="true"] + br {
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/10/28/json/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/28/json/" class="post-title-link" itemprop="url">json as a string</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-28 08:32:49 / Modified: 12:33:12" itemprop="dateCreated datePublished" datetime="2021-10-28T08:32:49+09:00">2021-10-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="json-as-a-special-string">JSON as a special string</h1>
+<pre><code>- JSON is not a special object in any language
+- JSON is just a special format of string which could be stored in any txt file</code></pre>
+<h2 id="json-in-javascript">JSON in javascript</h2>
+<pre><code>- JSON could be parsed into just an ordinary javascript object or python-dictionary-like thing by `JSON.parse`
+- &#39;JSON.stringify` could be used for converting a javascript object into a json string</code></pre>
+<h2 id="json-in-python">JSON in python</h2>
+<pre><code>- `json` package matters
+- this package could be used for converting JSON string into neither a special object nor instance from a special python class, but just an ordinary python dictionary.</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line"></span><br><span class="line">foo = &#x27;&#123;&quot;a&quot;:&quot;1&quot;, &quot;b&quot;:[1, 2, 3]&#125;&#x27;</span><br><span class="line">ba = json.loads(foo)</span><br><span class="line">print(type(ba))</span><br><span class="line">goo = json.dumps(ba)</span><br><span class="line">print(type(goo))</span><br><span class="line">print(goo)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

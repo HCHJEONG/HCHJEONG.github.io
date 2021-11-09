@@ -127,7 +127,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,6 +161,92 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/09/vue-2-project-setting-from-scratch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/09/vue-2-project-setting-from-scratch/" class="post-title-link" itemprop="url">vue-2-project-setting-from-scratch</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-09 18:03:21 / Modified: 18:12:54" itemprop="dateCreated datePublished" datetime="2021-11-09T18:03:21+09:00">2021-11-09</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="노드-제거-후-새로-설치">노드 제거 후 새로 설치</h2>
+<ul>
+<li><p>제어판에서 프로그램 제거할 것</p></li>
+<li><p><code>node.org</code>에 따라서 <code>npm</code> 이용 LTS 버전 설치</p></li>
+</ul>
+<h2 id="뷰-설치">뷰 설치</h2>
+<ul>
+<li><p><code>node_modules</code> 폴더 삭제</p></li>
+<li><p>프로젝트 폴더 설치 후 <code>vue.org</code>에 따라서 <code>npm</code> 이용 LTS 버전 설치</p></li>
+<li><p>설치 시 <code>vuex</code> 및 <code>vue-router</code>를 선택하고 <code>eslint</code> 및 <code>babel</code>도 선택할 것</p></li>
+</ul>
+<h2 id="그-다음-관련-모듈-설치">그 다음 관련 모듈 설치</h2>
+<ul>
+<li><code>npm install --save axios bootstrap bootstrap-vue p5 d3 d3-scale d3-axis</code></li>
+</ul>
+<h2 id="마지막으로-기존-프로젝트의-public-및-src를-덮어쓰고-아래-파일도-이동">마지막으로 기존 프로젝트의 <code>public</code> 및 <code>src</code>를 덮어쓰고 아래 파일도 이동</h2>
+<ul>
+<li><code>.gitignore</code></li>
+<li><code>vue.config.js</code></li>
+<li><code>editorconfig</code></li>
+<li><code>Dockerfile</code></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -918,80 +1004,6 @@
 <li><p>All channels can be summed up or stacked down, which depends on which shape you want for the next traning layer.</p></li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">col = int(input(&#x27;no of cols: &#x27;))</span><br><span class="line">filter = int(input(&#x27;size of filter: &#x27;))</span><br><span class="line">stride = int(input(&#x27;size of stride: &#x27;))</span><br><span class="line"></span><br><span class="line">idx = filter</span><br><span class="line">i = 0</span><br><span class="line">while True:</span><br><span class="line">    print(idx)</span><br><span class="line">    print()</span><br><span class="line">    i = i + 1</span><br><span class="line">    print(i)</span><br><span class="line">    print()</span><br><span class="line">    idx = idx + stride</span><br><span class="line">    if idx &gt;= col :</span><br><span class="line">        print(f&quot;Your input col dimension is &#123;col&#125;...\nand the kernel size is &#123;filter&#125;... \nand the stride is &#123;stride&#125;...&quot;)</span><br><span class="line">        print(f&quot;end at &#123;i&#125;... This is the next layer input col dimension...&quot;)</span><br><span class="line">        break </span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/10/28/json/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Heechan Jeong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ANGUK PARTNERS">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/28/json/" class="post-title-link" itemprop="url">json as a string</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-10-28 08:32:49 / Modified: 12:33:12" itemprop="dateCreated datePublished" datetime="2021-10-28T08:32:49+09:00">2021-10-28</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="json-as-a-special-string">JSON as a special string</h1>
-<pre><code>- JSON is not a special object in any language
-- JSON is just a special format of string which could be stored in any txt file</code></pre>
-<h2 id="json-in-javascript">JSON in javascript</h2>
-<pre><code>- JSON could be parsed into just an ordinary javascript object or python-dictionary-like thing by `JSON.parse`
-- &#39;JSON.stringify` could be used for converting a javascript object into a json string</code></pre>
-<h2 id="json-in-python">JSON in python</h2>
-<pre><code>- `json` package matters
-- this package could be used for converting JSON string into neither a special object nor instance from a special python class, but just an ordinary python dictionary.</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line"></span><br><span class="line">foo = &#x27;&#123;&quot;a&quot;:&quot;1&quot;, &quot;b&quot;:[1, 2, 3]&#125;&#x27;</span><br><span class="line">ba = json.loads(foo)</span><br><span class="line">print(type(ba))</span><br><span class="line">goo = json.dumps(ba)</span><br><span class="line">print(type(goo))</span><br><span class="line">print(goo)</span><br></pre></td></tr></table></figure>
 
       
     </div>
