@@ -239,7 +239,7 @@ mjx-container[display="true"] + br {
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -273,6 +273,119 @@ mjx-container[display="true"] + br {
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/10/29/vi-for-linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/29/vi-for-linux/" class="post-title-link" itemprop="url">vi-for-linux</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-29 10:05:49" itemprop="dateCreated datePublished" datetime="2021-10-29T10:05:49+09:00">2021-10-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-07 15:12:18" itemprop="dateModified" datetime="2021-11-07T15:12:18+09:00">2021-11-07</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="is-vi-editor-convenient-for-you">Is VI Editor Convenient for You?</h2>
+<ul>
+<li>The key idea is that users should discern two modes: command mode and insert mode</li>
+</ul>
+<h2 id="command-mode">COMMAND MODE</h2>
+<ul>
+<li><p>To enter overriding mode, press 'i' or 'a' with or without ctrl</p></li>
+<li><p>To move around, press 'h', 'j', 'k', 'l'</p></li>
+<li><p>To move around by word, press 'w' or 'b'</p></li>
+<li><p>To erase a letter, press 'x'</p></li>
+<li><p>To erase a line, press 'd'</p></li>
+<li><p>To select a letter or a line, press 'v' or 'V'</p></li>
+<li><p>To copy, press 'y'</p></li>
+<li><p>To paste, press 'p'</p></li>
+<li><p>To fix a letter, press 'r'</p></li>
+<li><p>To insert letters, press 'r' with ctrl</p></li>
+</ul>
+<h2 id="insert-mode">INSERT MODE</h2>
+<ul>
+<li><p>gg / G</p></li>
+<li><p>{ / }</p></li>
+<li><p>0 / $</p></li>
+<li><p>H / M / L</p></li>
+<li><p>j / k</p></li>
+<li><p>h / l</p></li>
+<li><p>i / a</p></li>
+<li><p>v / V</p></li>
+<li><p>x / y / p</p></li>
+<li><p>dd / D</p></li>
+</ul>
+<h2 id="그럼-진짜-흐름이-어떤식인가요">그럼 진짜 흐름이 어떤식인가요?</h2>
+<ul>
+<li><p>vi abc.txt 명령으로 창열고.</p></li>
+<li><p>방향키랑 i , a , 이용해서 편집모드로 들어가서 편집 마구마구 하고.</p></li>
+<li><p>이러다가 잘라낼때는 그 위치에서 esc -&gt; dd 눌러서 한줄 잘라내고.</p></li>
+<li><p>붙여 넣을 위치의 윗줄에서 p 눌러서 붙여 넣고</p></li>
+<li><p>또다시 i, a 이용해서 편집모드 들어갔다가 오타가 나오거나 하면 esc -&gt; x 눌러서 글자 없애고 다시 i, a 이용해서 편집모드로 편집</p></li>
+<li><p>이러다가 다 작성하면 esc -&gt; 콜론 (:) 누르고 -&gt; wq 입력후 엔터 치면 저장후 종료까지 깔-끔.</p></li>
+</ul>
+<p>출처:<a target="_blank" rel="noopener" href="https://blockdmask.tistory.com/25">개발자 지망생</a></p>
+<h2 id="여러-줄에-동일한-글자-입력">여러 줄에 동일한 글자 입력</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">여러 줄에 동일한 글자 입력하는 방법 (그림 1참조)</span><br><span class="line"></span><br><span class="line">“Ctrl + v”를 입력함</span><br><span class="line">글자를 입력하고 싶은 라인을 선택함</span><br><span class="line">“Shift + i”를 입력함</span><br><span class="line">원하는 글자를 입력함</span><br><span class="line">ESC를 입력함</span><br><span class="line">완성</span><br></pre></td></tr></table></figure>
+<p>출처: <a target="_blank" rel="noopener" href="https://mkblog.co.kr/2020/07/29/linux-vim-same-characters-on-multiple-lines/">MKBLOG.CO.KR</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1165,7 +1278,7 @@ inline mode: <span class="math inline"><mjx-container class="MathJax" jax="SVG">
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
