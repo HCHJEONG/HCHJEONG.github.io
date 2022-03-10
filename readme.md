@@ -4,3 +4,4 @@
 ## hexo clean
 ## hexo generate
 ## hexo deploy
+## hexo clean ;; hexo g -d // windows terminal
