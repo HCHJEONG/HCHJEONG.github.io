@@ -28,7 +28,7 @@
 <meta property="og:description" content="vue 3 그리고 composition api 주요 특징  composition api multiple root element suspense typescript support multiple v-model  @ 그리고 :  @은 tag 안에서 v-on:의 alias이고 script 안에서 &#39;scr&#x2F;&#39;의 alias :은 v-bind:의">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-10T08:50:04.000Z">
-<meta property="article:modified_time" content="2022-03-11T05:40:28.590Z">
+<meta property="article:modified_time" content="2022-03-11T05:50:54.426Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-3-%EA%B7%B8%EB%A6%AC%EA%B3%A0-composition-api"><span class="nav-number">1.</span> <span class="nav-text">vue 3 그리고 composition api</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%A3%BC%EC%9A%94-%ED%8A%B9%EC%A7%95"><span class="nav-number">1.1.</span> <span class="nav-text">주요 특징</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EA%B7%B8%EB%A6%AC%EA%B3%A0"><span class="nav-number">1.2.</span> <span class="nav-text">@ 그리고 :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-%EC%86%8D%EC%84%B1"><span class="nav-number">1.3.</span> <span class="nav-text">display 속성</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#inline-block"><span class="nav-number">1.3.1.</span> <span class="nav-text">inline-block</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flex"><span class="nav-number">1.3.2.</span> <span class="nav-text">flex</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#standard-browser-javascript-event-naming"><span class="nav-number">1.4.</span> <span class="nav-text">standard browser javascript event naming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-3%EC%9D%B4-html%EA%B3%BC-%EC%97%B0%EA%B2%B0%EB%90%98%EB%8A%94-%EC%A7%80%EC%A0%90"><span class="nav-number">1.5.</span> <span class="nav-text">vue 3이 html과 연결되는 지점</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#template-tag-%EB%82%B4%EB%B6%80%EC%9D%98-script-%EC%98%81%EC%97%AD"><span class="nav-number">1.6.</span> <span class="nav-text">template tag 내부의 script 영역</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array.prototype.filter"><span class="nav-number">1.7.</span> <span class="nav-text">Array.prototype.filter( () &#x3D;&gt; { })</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-tips"><span class="nav-number">1.8.</span> <span class="nav-text">css tips</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#template-refs"><span class="nav-number">1.9.</span> <span class="nav-text">TEMPLATE REFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#teleport"><span class="nav-number">1.10.</span> <span class="nav-text">teleport</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#props"><span class="nav-number">1.11.</span> <span class="nav-text">PROPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8"><span class="nav-number">1.12.</span> <span class="nav-text">커스텀 이벤트</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#event-modifier"><span class="nav-number">1.13.</span> <span class="nav-text">event modifier</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slot"><span class="nav-number">1.14.</span> <span class="nav-text">SLOT</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-3-%EA%B7%B8%EB%A6%AC%EA%B3%A0-composition-api"><span class="nav-number">1.</span> <span class="nav-text">vue 3 그리고 composition api</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%A3%BC%EC%9A%94-%ED%8A%B9%EC%A7%95"><span class="nav-number">1.1.</span> <span class="nav-text">주요 특징</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EA%B7%B8%EB%A6%AC%EA%B3%A0"><span class="nav-number">1.2.</span> <span class="nav-text">@ 그리고 :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-%EC%86%8D%EC%84%B1"><span class="nav-number">1.3.</span> <span class="nav-text">display 속성</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#inline-block"><span class="nav-number">1.3.1.</span> <span class="nav-text">inline-block</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flex"><span class="nav-number">1.3.2.</span> <span class="nav-text">flex</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#standard-browser-javascript-event-naming"><span class="nav-number">1.4.</span> <span class="nav-text">standard browser javascript event naming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-3%EC%9D%B4-html%EA%B3%BC-%EC%97%B0%EA%B2%B0%EB%90%98%EB%8A%94-%EC%A7%80%EC%A0%90"><span class="nav-number">1.5.</span> <span class="nav-text">vue 3이 html과 연결되는 지점</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#template-tag-%EB%82%B4%EB%B6%80%EC%9D%98-script-%EC%98%81%EC%97%AD"><span class="nav-number">1.6.</span> <span class="nav-text">template tag 내부의 script 영역</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array.prototype.filter"><span class="nav-number">1.7.</span> <span class="nav-text">Array.prototype.filter( () &#x3D;&gt; { })</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-tips"><span class="nav-number">1.8.</span> <span class="nav-text">css tips</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#template-refs"><span class="nav-number">1.9.</span> <span class="nav-text">TEMPLATE REFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#teleport"><span class="nav-number">1.10.</span> <span class="nav-text">teleport</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#props"><span class="nav-number">1.11.</span> <span class="nav-text">PROPS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8"><span class="nav-number">1.12.</span> <span class="nav-text">커스텀 이벤트</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#event-modifier"><span class="nav-number">1.13.</span> <span class="nav-text">event modifier</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slot"><span class="nav-number">1.14.</span> <span class="nav-text">SLOT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-router"><span class="nav-number">1.15.</span> <span class="nav-text">vue router</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fetch"><span class="nav-number">1.16.</span> <span class="nav-text">FETCH</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -207,7 +207,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-03-11 14:40:28" itemprop="dateModified" datetime="2022-03-11T14:40:28+09:00">2022-03-11</time>
+        <time title="Modified: 2022-03-11 14:50:54" itemprop="dateModified" datetime="2022-03-11T14:50:54+09:00">2022-03-11</time>
       </span>
 
   
@@ -314,6 +314,26 @@
 <li><code>&lt;Modal&gt;&lt;template v-slot = "link"&gt; ... &lt;/template&gt;&lt;/Modal&gt;</code></li>
 <li><code>&lt;slot name = "link"&gt; fallback &lt;/slot&gt;</code></li>
 </ul>
+<h3 id="vue-router">vue router</h3>
+<ul>
+<li>router param
+<ul>
+<li><code>path: '/jobs/:id</code></li>
+<li><code>$route.params.id //this 영역에 있지 않음</code></li>
+<li><code>&lt;router-link :to="&#123;name: 'Jobs', params: &#123; id: 3&#125;&#125;"</code></li>
+</ul></li>
+<li>this.<span class="math inline">\(router * `this.\)</span>router.go(-1)`
+<ul>
+<li><code>this.$router.push(&#123; name: 'Home' &#125;)</code></li>
+</ul></li>
+<li>etc.
+<ul>
+<li><code>path: '/catchAll(.*)'</code></li>
+<li><code>redirect: '/...'</code></li>
+</ul></li>
+</ul>
+<h3 id="fetch">FETCH</h3>
+<p><code>mounted() &#123; fetch('...').then(res=&gt;res.json()).then(data=&gt;this.jobs= data).catch(err =&gt; console.log(err.message))&#125;</code></p>
 
     </div>
 

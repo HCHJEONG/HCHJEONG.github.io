@@ -201,7 +201,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-03-11 14:40:28" itemprop="dateModified" datetime="2022-03-11T14:40:28+09:00">2022-03-11</time>
+        <time title="Modified: 2022-03-11 14:50:54" itemprop="dateModified" datetime="2022-03-11T14:50:54+09:00">2022-03-11</time>
       </span>
 
   
@@ -308,6 +308,26 @@
 <li><code>&lt;Modal&gt;&lt;template v-slot = "link"&gt; ... &lt;/template&gt;&lt;/Modal&gt;</code></li>
 <li><code>&lt;slot name = "link"&gt; fallback &lt;/slot&gt;</code></li>
 </ul>
+<h3 id="vue-router">vue router</h3>
+<ul>
+<li>router param
+<ul>
+<li><code>path: '/jobs/:id</code></li>
+<li><code>$route.params.id //this 영역에 있지 않음</code></li>
+<li><code>&lt;router-link :to="&#123;name: 'Jobs', params: &#123; id: 3&#125;&#125;"</code></li>
+</ul></li>
+<li>this.<span class="math inline">\(router * `this.\)</span>router.go(-1)`
+<ul>
+<li><code>this.$router.push(&#123; name: 'Home' &#125;)</code></li>
+</ul></li>
+<li>etc.
+<ul>
+<li><code>path: '/catchAll(.*)'</code></li>
+<li><code>redirect: '/...'</code></li>
+</ul></li>
+</ul>
+<h3 id="fetch">FETCH</h3>
+<p><code>mounted() &#123; fetch('...').then(res=&gt;res.json()).then(data=&gt;this.jobs= data).catch(err =&gt; console.log(err.message))&#125;</code></p>
 
       
     </div>
