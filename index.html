@@ -193,10 +193,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-03-10 17:50:04 / Modified: 17:50:37" itemprop="dateCreated datePublished" datetime="2022-03-10T17:50:04+09:00">2022-03-10</time>
+      <time title="Created: 2022-03-10 17:50:04" itemprop="dateCreated datePublished" datetime="2022-03-10T17:50:04+09:00">2022-03-10</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-03-11 14:30:31" itemprop="dateModified" datetime="2022-03-11T14:30:31+09:00">2022-03-11</time>
+      </span>
 
   
 </div>
@@ -208,7 +214,85 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h2 id="vue-3-그리고-composition-api">vue 3 그리고 composition api</h2>
+<h3 id="주요-특징">주요 특징</h3>
+<ul>
+<li><p>composition api</p></li>
+<li><p>multiple root element</p></li>
+<li><p>suspense</p></li>
+<li><p>typescript support</p></li>
+<li><p>multiple v-model</p></li>
+</ul>
+<h3 id="그리고">@ 그리고 :</h3>
+<ul>
+<li><p><code>@</code>은 tag 안에서 <code>v-on:</code>의 alias이고 script 안에서 'scr/'의 alias</p></li>
+<li><p><code>:</code>은 <code>v-bind:</code>의 alias</p></li>
+</ul>
+<h3 id="display-속성">display 속성</h3>
+<h4 id="inline-block">inline-block</h4>
+<ul>
+<li><p>element들의 배치에 관한 속성 중 하나</p></li>
+<li><p>inline에서 불가능하던 width, height, margin, padding 지정이 block 속성의 경우처럼 가능한 inline임</p></li>
+<li><p>즉, 속성의 상하 간격 지정이 가능해 짐</p></li>
+</ul>
+<h4 id="flex">flex</h4>
+<p><code>display: flex;</code> <code>align-items: center;</code> <code>justify-content: space-between;</code></p>
+<h3 id="standard-browser-javascript-event-naming">standard browser javascript event naming</h3>
+<ul>
+<li><code>mousemove</code> - <code>e.offsetX</code></li>
+</ul>
+<h3 id="vue-3이-html과-연결되는-지점">vue 3이 html과 연결되는 지점</h3>
+<p><code>import &#123; createApp &#125; from 'vue'</code></p>
+<p><code>let data = () =&gt; &#123; return &#123; title : '', text : '', pages : null &#125;&#125;</code></p>
+<p><code>let method = &#123; method1 : () = &gt; &#123;&#125;, method2 : () =&gt; &#123;&#125; &#125;</code></p>
+<p><code>let obj = &#123; data, method, &#125;</code></p>
+<p><code>app = createApp(obj)</code></p>
+<p><code>app.mount('#app')</code></p>
+<h3 id="template-tag-내부의-script-영역">template tag 내부의 script 영역</h3>
+<ul>
+<li><p>tag 외부: <code>&#123;&#123;   &#125;&#125;</code></p></li>
+<li><p>tag 내부</p>
+<ul>
+<li>vue directive 내부: <code>"   "</code></li>
+<li>html 속성 내부: <code>v-bind:</code>를 추가한 <code>"   "</code>
+<ul>
+<li>html 속성 중 class의 경우에는 아래와 같이 사용 <code>v-bind:class = "&#123; fav: true &#125;"</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="array.prototype.filter">Array.prototype.filter( () =&gt; { })</h3>
+<h3 id="css-tips">css tips</h3>
+<ul>
+<li><code>border-bottom: 1px solid #ddd;</code></li>
+<li><code>padding-bottom: 10px;</code></li>
+<li><code>margin: 100px auto; //(top bottom) (left right)</code></li>
+<li><code>border-radius: 10px;</code></li>
+<li><code>import './assets/global.css //in main.js</code></li>
+<li>태그 선택자 / 클래스 선택자(.) / 아이디 선택자(#) / 하위 선택자( ) / 자식 선택자(&gt;) / 인접형제 선택자(+) / 일반형제 선택자(~) / 속성 선택자([...]) / 가상클래스 선택자(:)</li>
+</ul>
+<h3 id="template-refs">TEMPLATE REFS</h3>
+<ul>
+<li><code>&lt;input type = "text" ref = "name"&gt; ... &lt;/ ... &gt;</code></li>
+<li><code>&lt;button @click="hC"&gt;click&lt;/button&gt;</code></li>
+<li><code>... hC()&#123; this.$refs.name.classList.add('active')&#125;</code></li>
+<li><code>... hc()&#123; this.$refs.name.focus()</code></li>
+</ul>
+<h3 id="teleport">teleport</h3>
+<ul>
+<li><code>&lt;div class = "modals" /&gt; //in index.html</code></li>
+<li><code>&lt;teleport to="modals"&gt; //in vue components</code></li>
+</ul>
+<h3 id="props">PROPS</h3>
+<ul>
+<li>부모 컴포넌트 tag 속성값 =&gt; 자식 컴포넌트 script 변수</li>
+<li><code>&lt;Modal header= " ... " text = " ... " :abc = "['a', 'b', 'c']" /&gt; // in 부모 컴포넌트 tag</code></li>
+<li><code>props: ['header', 'text', 'abc'] // 자식 컴포넌트 Modal.vue script export 영역</code></li>
+<li><code>&lt;div :class = "&#123; sale: text === ''&#125;"&gt;// 자식 컴포넌트 Modal.vue tag 영역</code></li>
+</ul>
+<h3 id="커스텀-이벤트">커스텀 이벤트</h3>
+<ul>
+<li></li>
+</ul>
 
       
     </div>
