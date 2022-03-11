@@ -201,7 +201,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-03-11 14:30:31" itemprop="dateModified" datetime="2022-03-11T14:30:31+09:00">2022-03-11</time>
+        <time title="Modified: 2022-03-11 14:40:28" itemprop="dateModified" datetime="2022-03-11T14:40:28+09:00">2022-03-11</time>
       </span>
 
   
@@ -291,7 +291,22 @@
 </ul>
 <h3 id="커스텀-이벤트">커스텀 이벤트</h3>
 <ul>
-<li></li>
+<li><code>&lt;Modal @close = " ... " /&gt; // 부모 컴포넌트 tag 영역</code></li>
+<li><code>this.$emit("close") // 자식 컴포넌트 script 영역</code></li>
+</ul>
+<h3 id="event-modifier">event modifier</h3>
+<ul>
+<li><code>click.self</code></li>
+<li><code>click.prevent</code></li>
+<li><code>click.alt</code></li>
+</ul>
+<h3 id="slot">SLOT</h3>
+<ul>
+<li>슬롯은 일반적으로 opening tag와 closing tag 사이의 공간을 의미</li>
+<li><code>&lt;Modal &gt; ... &lt;/Modal&gt; //부모 컴포넌트</code></li>
+<li><code>&lt;slot&gt; fallback &lt;/slot&gt; //자식 컴포넌트</code></li>
+<li><code>&lt;Modal&gt;&lt;template v-slot = "link"&gt; ... &lt;/template&gt;&lt;/Modal&gt;</code></li>
+<li><code>&lt;slot name = "link"&gt; fallback &lt;/slot&gt;</code></li>
 </ul>
 
       
