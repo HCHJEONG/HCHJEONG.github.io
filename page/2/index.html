@@ -47,119 +47,7 @@
   </noscript><meta name="google-site-verification" content="gf7brwkPWUFDVsZlMiPsYcsKOjr_irdxG_pluNxQ66M" />
 <meta name="naver-site-verification" content="145e8a587f6eddaabff92b987d9cab8d13205700" />
 
-<style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- firstAdsense -->
@@ -239,7 +127,7 @@ mjx-container[display="true"] + br {
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -273,6 +161,148 @@ mjx-container[display="true"] + br {
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/05/vue-vuetify/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/05/vue-vuetify/" class="post-title-link" itemprop="url">vue-vuetify-basics</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-11-05 10:22:49" itemprop="dateCreated datePublished" datetime="2021-11-05T10:22:49+09:00">2021-11-05</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-11-11 10:08:30" itemprop="dateModified" datetime="2021-11-11T10:08:30+09:00">2021-11-11</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="v-bind-v-on-v-model">V-BIND / V-ON / V-MODEL</h2>
+<ul>
+<li><p><code>v-bind:&#123;html document element name&#125; = "&#123;vue instance variable name&#125;"</code></p>
+<ul>
+<li><p>This is used for binding reactively and dynamically</p></li>
+<li><p>In this case, the html document element name could be the child component's instance variable name</p></li>
+<li><p>{html document element name} in parent component is {vue instance variable name} in child component</p></li>
+<li><p>Without <code>v-bind:</code>:</p>
+<ul>
+<li><p>the value of the element as well as the child component's instance variable does not vary reactively</p></li>
+<li><p>the content within the quote signs will not be evaluated as javascript expression</p></li>
+</ul></li>
+</ul></li>
+<li><p><code>v-on:&#123;html document event name&#125; = "&#123;vue instance function name&#125;"</code></p></li>
+<li><p><code>v-model = "&#123;name of vue instance variable that vary with vue instance function&#125;"</code></p></li>
+</ul>
+<h2 id="slot">SLOT</h2>
+<ul>
+<li><p>V-SLOT: v-directives within template component in parent component</p></li>
+<li><p>SLOT: vue component name within child component</p></li>
+</ul>
+<h2 id="slot-with-v-bind">SLOT WITH V-BIND</h2>
+<ul>
+<li><p>PARENT: <code>&lt;&#123;child component name&#125;&gt;&lt;template v-slot:&#123;slot name&#125; = "slotProps"&gt; ... &lt;/template&gt;&lt;/&#123;child component name&#125;&gt;</code></p></li>
+<li><p>CHILD: <code>&lt;slot name = "&#123;slot name&#125;" v-bind:&#123;element or property or event name&#125; = "&#123;an object key in slotProps object, or 'on' / 'attrs'&#125;"&gt;</code></p></li>
+<li><p>CAUTIOUS: slopProps is different from props, so slopProps should not be defined in script section</p></li>
+</ul>
+<h2 id="eslint">ESLINT</h2>
+<ul>
+<li><p>.vscode &gt; setting.json regarding auto fix save</p></li>
+<li><p>.editorconfig regarding indent, etc.</p></li>
+<li><p>package.json or eslintrc.js regarding eslint error / warning / off policy</p></li>
+</ul>
+<h2 id="css">CSS</h2>
+<ul>
+<li><p>display: block / inline / inline-block / flex / grid</p></li>
+<li><p>flexx / grid: container/item system</p></li>
+<li><p>vh / vw / vmin / vmax</p></li>
+<li><p>px</p></li>
+<li><p>rem / em</p></li>
+<li><p>document.querySelector("{css selector").getBoundingClientRect()</p></li>
+<li><p>document.querySelector("{css selector}").offsetWidth</p></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="vue">VUE</h2>
+<h3 id="v-component">v-component</h3>
+<ul>
+<li><p>v-app</p></li>
+<li><p>v-app-bar</p></li>
+<li><p>v-container</p></li>
+<li><p>v-main</p></li>
+<li><p>slot</p></li>
+</ul>
+<h3 id="v-directives">v-directives</h3>
+<ul>
+<li><p>fluid</p></li>
+<li><p>v-if</p></li>
+<li><p>v-for</p></li>
+<li><p>v-slot</p></li>
+<li><p>v-on</p></li>
+<li><p>v-model</p></li>
+<li><p><code>$attrs</code> WITH <code>inheritAttrs: false</code></p></li>
+</ul>
+<h2 id="vuetify">VUETIFY</h2>
+<ul>
+<li><p>v-row: align (center start end)</p></li>
+<li><p>v- col: justfy (center start end space-around space-between)</p></li>
+<li><p>v-card</p></li>
+<li><p>v-dialog</p></li>
+<li><p>bootstrap-vue : b- ... / pa-... / mt-...</p></li>
+<li><p>xs / sm / md / lg / xl</p></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1004,87 +1034,6 @@ mjx-container[display="true"] + br {
 <h2 id="install-on-harddisk">Install on Harddisk</h2>
 <h3 id="everything-is-smooth-hopefully...">Everything is smooth hopefully...</h3>
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/05/17/Google-Cloud-Platform-Compute-Engine%EC%97%90%EC%84%9C-DOCKER%EB%A1%9C-flask-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Heechan Jeong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ANGUK PARTNERS">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/17/Google-Cloud-Platform-Compute-Engine%EC%97%90%EC%84%9C-DOCKER%EB%A1%9C-flask-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/" class="post-title-link" itemprop="url">Google Cloud Platform 무료 Compute Engine에서 DOCKER로 Flask 서비스 간편 구현하기</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-05-17 12:44:43 / Modified: 16:31:30" itemprop="dateCreated datePublished" datetime="2021-05-17T12:44:43+09:00">2021-05-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/docker/" itemprop="url" rel="index"><span itemprop="name">docker</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          GCP Compute Engine for Docker Deployment of Flask Backend
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/05/17/Google-Cloud-Platform-Compute-Engine%EC%97%90%EC%84%9C-DOCKER%EB%A1%9C-flask-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 

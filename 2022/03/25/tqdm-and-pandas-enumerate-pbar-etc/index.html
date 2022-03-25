@@ -20,27 +20,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta name="description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
+<meta name="description" content="basic *tqdm.tqdm wrapping iterator in for sentence *enumerate wrapping tqdm.tqdm pandas code using apply *tqdm.tqdm.pandas() *using progress_apply instead of apply pbar in case of complex descri">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!">
-<meta property="og:url" content="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/index.html">
+<meta property="og:title" content="tqdm and pandas (enumerate, pbar, etc...)">
+<meta property="og:url" content="http://hchjeong.github.io/2022/03/25/tqdm-and-pandas-enumerate-pbar-etc/index.html">
 <meta property="og:site_name" content="ANGUK PARTNERS">
-<meta property="og:description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
+<meta property="og:description" content="basic *tqdm.tqdm wrapping iterator in for sentence *enumerate wrapping tqdm.tqdm pandas code using apply *tqdm.tqdm.pandas() *using progress_apply instead of apply pbar in case of complex descri">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-27T23:42:38.000Z">
-<meta property="article:modified_time" content="2021-11-01T06:06:41.950Z">
+<meta property="article:published_time" content="2022-03-25T07:27:37.000Z">
+<meta property="article:modified_time" content="2022-03-25T07:36:47.519Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/">
+<link rel="canonical" href="http://hchjeong.github.io/2022/03/25/tqdm-and-pandas-enumerate-pbar-etc/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;hchjeong.github.io&#x2F;2021&#x2F;10&#x2F;28&#x2F;conv1d-in-torch&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;10&#x2F;28&#x2F;conv1d-in-torch&#x2F;&quot;,&quot;title&quot;:&quot;CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;hchjeong.github.io&#x2F;2022&#x2F;03&#x2F;25&#x2F;tqdm-and-pandas-enumerate-pbar-etc&#x2F;&quot;,&quot;path&quot;:&quot;2022&#x2F;03&#x2F;25&#x2F;tqdm-and-pandas-enumerate-pbar-etc&#x2F;&quot;,&quot;title&quot;:&quot;tqdm and pandas (enumerate, pbar, etc...)&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D! | ANGUK PARTNERS</title><script src="/js/config.js"></script>
+<title>tqdm and pandas (enumerate, pbar, etc...) | ANGUK PARTNERS</title><script src="/js/config.js"></script>
   
 
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset"><span class="nav-number">1.</span> <span class="nav-text">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#basic"><span class="nav-number">1.</span> <span class="nav-text">basic</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pandas-code-using-apply"><span class="nav-number">2.</span> <span class="nav-text">pandas code using apply</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pbar-in-case-of-complex-description-postfix-and-update-step"><span class="nav-number">3.</span> <span class="nav-text">pbar in case of complex description, postfix, and update step</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -176,7 +176,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2022/03/25/tqdm-and-pandas-enumerate-pbar-etc/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -189,7 +189,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!
+          tqdm and pandas (enumerate, pbar, etc...)
         </h1>
 
         <div class="post-meta-container">
@@ -199,16 +199,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-10-28 08:42:38" itemprop="dateCreated datePublished" datetime="2021-10-28T08:42:38+09:00">2021-10-28</time>
+      <time title="Created: 2022-03-25 16:27:37 / Modified: 16:36:47" itemprop="dateCreated datePublished" datetime="2022-03-25T16:27:37+09:00">2022-03-25</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-01 15:06:41" itemprop="dateModified" datetime="2021-11-01T15:06:41+09:00">2021-11-01</time>
-      </span>
 
   
 </div>
@@ -220,17 +214,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</h1>
-<ul>
-<li>After a layer, all the channels are summed up as to each neuron in case of 2D</li>
-</ul>
-<h2 id="however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</h2>
-<ul>
-<li><p>Of course, in this case, the input data is a set of matrices</p></li>
-<li><p>In case of rank 3 dataset, conv1D as well as conv2D and conv3D are all possible.</p></li>
-<li><p>All channels can be summed up or stacked down, which depends on which shape you want for the next traning layer.</p></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">col = int(input(&#x27;no of cols: &#x27;))</span><br><span class="line">filter = int(input(&#x27;size of filter: &#x27;))</span><br><span class="line">stride = int(input(&#x27;size of stride: &#x27;))</span><br><span class="line"></span><br><span class="line">idx = filter</span><br><span class="line">i = 0</span><br><span class="line">while True:</span><br><span class="line">    print(idx)</span><br><span class="line">    print()</span><br><span class="line">    i = i + 1</span><br><span class="line">    print(i)</span><br><span class="line">    print()</span><br><span class="line">    idx = idx + stride</span><br><span class="line">    if idx &gt;= col :</span><br><span class="line">        print(f&quot;Your input col dimension is &#123;col&#125;...\nand the kernel size is &#123;filter&#125;... \nand the stride is &#123;stride&#125;...&quot;)</span><br><span class="line">        print(f&quot;end at &#123;i&#125;... This is the next layer input col dimension...&quot;)</span><br><span class="line">        break </span><br></pre></td></tr></table></figure>
+        <h2 id="basic">basic</h2>
+<p>*<code>tqdm.tqdm</code> wrapping iterator in <code>for</code> sentence</p>
+<p>*<code>enumerate</code> wrapping <code>tqdm.tqdm</code></p>
+<h2 id="pandas-code-using-apply">pandas code using apply</h2>
+<p>*<code>tqdm.tqdm.pandas()</code></p>
+<p>*using <code>progress_apply</code> instead of <code>apply</code></p>
+<h2 id="pbar-in-case-of-complex-description-postfix-and-update-step">pbar in case of complex description, postfix, and update step</h2>
+<p>*<code>with tqdm(total = :int) as pbar:</code> wrapping <code>for</code> sentence</p>
+<p>*<code>pbar.update(:int)</code></p>
+<p>*<code>pbar.set_description_str(f"&#123;")</code></p>
+<p>*<code>pbar.set_postfix_str(f"&#123;&#125;")</code></p>
+<p>*<code>pbar.write(f"&#123;&#125;")</code></p>
 
     </div>
 
@@ -244,14 +239,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/10/28/json/" rel="prev" title="json as a string">
-                  <i class="fa fa-chevron-left"></i> json as a string
+                <a href="/2022/03/10/vue3-and-quasar/" rel="prev" title="vue3 and quasar">
+                  <i class="fa fa-chevron-left"></i> vue3 and quasar
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/10/28/rnn/" rel="next" title="rnn-attention-transformer">
-                  rnn-attention-transformer <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

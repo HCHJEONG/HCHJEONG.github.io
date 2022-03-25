@@ -127,7 +127,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -161,6 +161,82 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2022/03/25/tqdm-and-pandas-enumerate-pbar-etc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/03/25/tqdm-and-pandas-enumerate-pbar-etc/" class="post-title-link" itemprop="url">tqdm and pandas (enumerate, pbar, etc...)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-03-25 16:27:37 / Modified: 16:36:47" itemprop="dateCreated datePublished" datetime="2022-03-25T16:27:37+09:00">2022-03-25</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="basic">basic</h2>
+<p>*<code>tqdm.tqdm</code> wrapping iterator in <code>for</code> sentence</p>
+<p>*<code>enumerate</code> wrapping <code>tqdm.tqdm</code></p>
+<h2 id="pandas-code-using-apply">pandas code using apply</h2>
+<p>*<code>tqdm.tqdm.pandas()</code></p>
+<p>*using <code>progress_apply</code> instead of <code>apply</code></p>
+<h2 id="pbar-in-case-of-complex-description-postfix-and-update-step">pbar in case of complex description, postfix, and update step</h2>
+<p>*<code>with tqdm(total = :int) as pbar:</code> wrapping <code>for</code> sentence</p>
+<p>*<code>pbar.update(:int)</code></p>
+<p>*<code>pbar.set_description_str(f"&#123;")</code></p>
+<p>*<code>pbar.set_postfix_str(f"&#123;&#125;")</code></p>
+<p>*<code>pbar.write(f"&#123;&#125;")</code></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -998,148 +1074,6 @@
 <ul>
 <li><p>Allowed only in case of python-dictionary-like javascript object</p></li>
 <li><p>This is used only for allocation of value mainly for acting as a parameter</p></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/05/vue-vuetify/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Heechan Jeong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ANGUK PARTNERS">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/05/vue-vuetify/" class="post-title-link" itemprop="url">vue-vuetify-basics</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-11-05 10:22:49" itemprop="dateCreated datePublished" datetime="2021-11-05T10:22:49+09:00">2021-11-05</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-11 10:08:30" itemprop="dateModified" datetime="2021-11-11T10:08:30+09:00">2021-11-11</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="v-bind-v-on-v-model">V-BIND / V-ON / V-MODEL</h2>
-<ul>
-<li><p><code>v-bind:&#123;html document element name&#125; = "&#123;vue instance variable name&#125;"</code></p>
-<ul>
-<li><p>This is used for binding reactively and dynamically</p></li>
-<li><p>In this case, the html document element name could be the child component's instance variable name</p></li>
-<li><p>{html document element name} in parent component is {vue instance variable name} in child component</p></li>
-<li><p>Without <code>v-bind:</code>:</p>
-<ul>
-<li><p>the value of the element as well as the child component's instance variable does not vary reactively</p></li>
-<li><p>the content within the quote signs will not be evaluated as javascript expression</p></li>
-</ul></li>
-</ul></li>
-<li><p><code>v-on:&#123;html document event name&#125; = "&#123;vue instance function name&#125;"</code></p></li>
-<li><p><code>v-model = "&#123;name of vue instance variable that vary with vue instance function&#125;"</code></p></li>
-</ul>
-<h2 id="slot">SLOT</h2>
-<ul>
-<li><p>V-SLOT: v-directives within template component in parent component</p></li>
-<li><p>SLOT: vue component name within child component</p></li>
-</ul>
-<h2 id="slot-with-v-bind">SLOT WITH V-BIND</h2>
-<ul>
-<li><p>PARENT: <code>&lt;&#123;child component name&#125;&gt;&lt;template v-slot:&#123;slot name&#125; = "slotProps"&gt; ... &lt;/template&gt;&lt;/&#123;child component name&#125;&gt;</code></p></li>
-<li><p>CHILD: <code>&lt;slot name = "&#123;slot name&#125;" v-bind:&#123;element or property or event name&#125; = "&#123;an object key in slotProps object, or 'on' / 'attrs'&#125;"&gt;</code></p></li>
-<li><p>CAUTIOUS: slopProps is different from props, so slopProps should not be defined in script section</p></li>
-</ul>
-<h2 id="eslint">ESLINT</h2>
-<ul>
-<li><p>.vscode &gt; setting.json regarding auto fix save</p></li>
-<li><p>.editorconfig regarding indent, etc.</p></li>
-<li><p>package.json or eslintrc.js regarding eslint error / warning / off policy</p></li>
-</ul>
-<h2 id="css">CSS</h2>
-<ul>
-<li><p>display: block / inline / inline-block / flex / grid</p></li>
-<li><p>flexx / grid: container/item system</p></li>
-<li><p>vh / vw / vmin / vmax</p></li>
-<li><p>px</p></li>
-<li><p>rem / em</p></li>
-<li><p>document.querySelector("{css selector").getBoundingClientRect()</p></li>
-<li><p>document.querySelector("{css selector}").offsetWidth</p></li>
-</ul>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="vue">VUE</h2>
-<h3 id="v-component">v-component</h3>
-<ul>
-<li><p>v-app</p></li>
-<li><p>v-app-bar</p></li>
-<li><p>v-container</p></li>
-<li><p>v-main</p></li>
-<li><p>slot</p></li>
-</ul>
-<h3 id="v-directives">v-directives</h3>
-<ul>
-<li><p>fluid</p></li>
-<li><p>v-if</p></li>
-<li><p>v-for</p></li>
-<li><p>v-slot</p></li>
-<li><p>v-on</p></li>
-<li><p>v-model</p></li>
-<li><p><code>$attrs</code> WITH <code>inheritAttrs: false</code></p></li>
-</ul>
-<h2 id="vuetify">VUETIFY</h2>
-<ul>
-<li><p>v-row: align (center start end)</p></li>
-<li><p>v- col: justfy (center start end space-around space-between)</p></li>
-<li><p>v-card</p></li>
-<li><p>v-dialog</p></li>
-<li><p>bootstrap-vue : b- ... / pa-... / mt-...</p></li>
-<li><p>xs / sm / md / lg / xl</p></li>
 </ul>
 
       
