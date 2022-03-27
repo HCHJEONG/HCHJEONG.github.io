@@ -28,8 +28,9 @@
 <meta property="og:description" content="D3 JS as DOM MANIPULATOR Use CSS Selector 12345678d3.select(&amp;#123;existing element name or id&amp;#125;)  .selectAll(&amp;#123;yet not existing element selector&amp;#125;)  .data(Array&lt;Obj&gt;[, Obj &#x3D;&gt; Ob">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-11-08T06:36:46.000Z">
-<meta property="article:modified_time" content="2021-11-10T07:33:20.927Z">
+<meta property="article:modified_time" content="2022-03-27T23:52:04.261Z">
 <meta property="article:author" content="Heechan Jeong">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
 
 
@@ -119,7 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-js-as-dom-manipulator"><span class="nav-number">1.</span> <span class="nav-text">D3 JS as DOM MANIPULATOR</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#use-css-selector"><span class="nav-number">1.1.</span> <span class="nav-text">Use CSS Selector</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-js-as-svg-element-creator"><span class="nav-number">2.</span> <span class="nav-text">D3 JS as SVG element Creator</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ds-js-as-data-manipulator"><span class="nav-number"></span> <span class="nav-text">DS JS as DATA MANIPULATOR</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-scale"><span class="nav-number">1.</span> <span class="nav-text">D3-SCALE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-axis"><span class="nav-number">2.</span> <span class="nav-text">D3-AXIS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-in-vue"><span class="nav-number">3.</span> <span class="nav-text">D3 in VUE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-chart"><span class="nav-number">4.</span> <span class="nav-text">D3 CHART</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-js-as-dom-manipulator"><span class="nav-number">1.</span> <span class="nav-text">D3 JS as DOM MANIPULATOR</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#use-css-selector"><span class="nav-number">1.1.</span> <span class="nav-text">Use CSS Selector</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-js-as-svg-element-creator"><span class="nav-number">2.</span> <span class="nav-text">D3 JS as SVG element Creator</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ds-js-as-data-manipulator"><span class="nav-number">3.</span> <span class="nav-text">DS JS as DATA MANIPULATOR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-scale"><span class="nav-number">4.</span> <span class="nav-text">D3-SCALE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-axis"><span class="nav-number">5.</span> <span class="nav-text">D3-AXIS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-in-vue"><span class="nav-number">6.</span> <span class="nav-text">D3 in VUE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#d3-chart"><span class="nav-number">7.</span> <span class="nav-text">D3 CHART</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -139,6 +140,10 @@
       <div class="site-state-item site-state-categories">
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
@@ -207,7 +212,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-11-10 16:33:20" itemprop="dateModified" datetime="2021-11-10T16:33:20+09:00">2021-11-10</time>
+        <time title="Modified: 2022-03-28 08:52:04" itemprop="dateModified" datetime="2022-03-28T08:52:04+09:00">2022-03-28</time>
       </span>
 
   
@@ -225,7 +230,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">d3.select(&#123;existing element name or id&#125;)</span><br><span class="line">  .selectAll(&#123;yet not existing element selector&#125;)</span><br><span class="line">  .data(<span class="built_in">Array</span>&lt;Obj&gt;[, <span class="function"><span class="params">Obj</span> =&gt;</span> Obj.key])</span><br><span class="line">  .enter() <span class="keyword">for</span> selecting missing data or .exit() <span class="keyword">for</span> selecting abundant that is treated one by one below</span><br><span class="line">  .append() / remove() <span class="keyword">for</span> adding or deleting elements having selected data</span><br><span class="line">  .classed()</span><br><span class="line">  .style()</span><br><span class="line">  .text(<span class="function"><span class="params">data</span> =&gt;</span> data.value)</span><br></pre></td></tr></table></figure>
 <h2 id="d3-js-as-svg-element-creator">D3 JS as SVG element Creator</h2>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">line = d3.line().x().y()</span><br><span class="line">&lt;svg&gt;<span class="xml"><span class="tag">&lt;<span class="name">path</span> <span class="attr">d</span> = <span class="string">&quot;line(dataset)&quot;</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h1 id="ds-js-as-data-manipulator">DS JS as DATA MANIPULATOR</h1>
+<h2 id="ds-js-as-data-manipulator">DS JS as DATA MANIPULATOR</h2>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">d3.nest().key(<span class="function"><span class="params">item</span> =&gt;</span> item.category).entries()</span><br><span class="line">d3.nest().object()</span><br><span class="line">d3.hierachy().children()</span><br><span class="line">d3.hierachy().decendants()</span><br><span class="line">d3.hierachy().leaves()</span><br><span class="line">d3.hierachy().count()</span><br><span class="line">d3.hierachy().sum()</span><br><span class="line">d3.hierachy().sort()</span><br></pre></td></tr></table></figure>
 <h2 id="d3-scale">D3-SCALE</h2>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d3.scaleTime().ticks(<span class="number">10</span>).map(<span class="function"><span class="params">d</span> =&gt;</span> dateScale(d)).domain([]).range([]) <span class="comment">// map for normalizing</span></span><br><span class="line">d3.scaleBand.domain([]).rangeRound([]).padding().scalebandwidth()</span><br></pre></td></tr></table></figure>
@@ -244,6 +249,9 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/javascript/" rel="tag"># javascript</a>
+          </div>
 
         
 
