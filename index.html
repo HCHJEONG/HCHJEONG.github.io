@@ -127,13 +127,9 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">11</span>
@@ -165,6 +161,83 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2022/03/28/dev-laptop-setting/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/03/28/dev-laptop-setting/" class="post-title-link" itemprop="url">dev laptop setting</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-03-28 09:22:52 / Modified: 09:34:32" itemprop="dateCreated datePublished" datetime="2022-03-28T09:22:52+09:00">2022-03-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="dev-laptop-setting">dev laptop setting</h2>
+<h3 id="formatting-and-install-windows-1011">formatting and install windows 10/11</h3>
+<h3 id="install-chrome">install chrome</h3>
+<h3 id="install-vscode-and-set-a-workplace">install vscode and set a workplace</h3>
+<h3 id="install-anaconda-and-conda-init">install anaconda and <code>conda init</code></h3>
+<h3 id="install-git-and-git-initgit-clone-...">install git and <code>git init</code>/<code>git clone ...</code></h3>
+<h3 id="admin-mode-pip-install---upgrade-pip">admin mode: pip install --upgrade pip</h3>
+<h3 id="pip-install-konlpy-after-installing-java-sdk-setting-java_home-path-to-java_homebin-and-downloading-and-installing-jpype-1">pip install konlpy after installing java sdk, setting JAVA_HOME / PATH to %JAVA_HOME%/bin and downloading and installing JPype 1</h3>
+<h3 id="download-elasticsearch-unzip-it-under-root-foler-and-change-config-yaml-file-to-security-false">download elasticsearch, unzip it under root foler and change config yaml file to security false</h3>
+<h3 id="nori-install">nori install</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$bin</span>/elasticsearch-plugin install analysis-nori</span><br></pre></td></tr></table></figure>
+<h3 id="copy-df-corpus-fullest-and-df-summary-fullest-into-saved-folder">copy df corpus fullest and df summary fullest into saved folder</h3>
+<h3 id="install-node-vue-and-quasar">install node, vue and quasar</h3>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1028,87 +1101,6 @@
 <h2 id="d3-chart">D3 CHART</h2>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;d3-container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">svg</span> <span class="attr">id</span>=<span class="string">&quot;svgChart&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;data&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> createD3 <span class="keyword">from</span> <span class="string">&quot;@/plugins/Landing3&quot;</span>;</span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">  <span class="attr">name</span>: <span class="string">&quot;Dthree&quot;</span>,</span></span><br><span class="line"><span class="javascript">  <span class="function"><span class="title">mounted</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">this</span>.$nextTick(<span class="function">() =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">const</span> w = <span class="built_in">document</span>.querySelector(<span class="string">&quot;#canvas&quot;</span>).offsetWidth;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">const</span> h = <span class="built_in">document</span>.querySelector(<span class="string">&quot;#canvas&quot;</span>).offsetHeight;</span></span><br><span class="line"><span class="javascript">      createD3(w / <span class="number">2</span>, w / <span class="number">2</span>, h);</span></span><br><span class="line"><span class="javascript">    &#125;);</span></span><br><span class="line"><span class="javascript">  &#125;,</span></span><br><span class="line"><span class="javascript">&#125;;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css"><span class="selector-id">#d3-container</span> &#123;</span></span><br><span class="line"><span class="css">  <span class="attribute">height</span>: <span class="number">65vh</span>;</span></span><br><span class="line"><span class="css">  <span class="attribute">max-height</span>: <span class="number">500px</span>;</span></span><br><span class="line"><span class="css">  <span class="attribute">display</span>: flex;</span></span><br><span class="line"><span class="css">&#125;</span></span><br><span class="line"><span class="css"><span class="selector-tag">li</span> &#123;</span></span><br><span class="line"><span class="css">  <span class="attribute">margin</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="css">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="css">&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> d3 <span class="keyword">from</span> <span class="string">&quot;d3&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createD3</span>(<span class="params">chartWidth, inputBoxWidth, h</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> DUMMY_DATA = [</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">&quot;d1&quot;</span>, <span class="attr">region</span>: <span class="string">&quot;USA&quot;</span>, <span class="attr">value</span>: <span class="number">10</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">&quot;d2&quot;</span>, <span class="attr">region</span>: <span class="string">&quot;India&quot;</span>, <span class="attr">value</span>: <span class="number">12</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">&quot;d3&quot;</span>, <span class="attr">region</span>: <span class="string">&quot;China&quot;</span>, <span class="attr">value</span>: <span class="number">11</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">id</span>: <span class="string">&quot;d4&quot;</span>, <span class="attr">region</span>: <span class="string">&quot;Germany&quot;</span>, <span class="attr">value</span>: <span class="number">6</span> &#125;,</span><br><span class="line">  ];</span><br><span class="line">  <span class="keyword">const</span> MARGINS = &#123; <span class="attr">top</span>: <span class="number">20</span>, <span class="attr">bottom</span>: <span class="number">10</span> &#125;;</span><br><span class="line">  <span class="keyword">const</span> CHART_WIDTH = chartWidth;</span><br><span class="line">  <span class="keyword">const</span> CHART_HEIGHT = h - MARGINS.top - MARGINS.bottom;</span><br><span class="line">  <span class="keyword">const</span> x = d3.scaleBand().rangeRound([<span class="number">0</span>, CHART_WIDTH]).padding(<span class="number">0.1</span>);</span><br><span class="line">  <span class="keyword">const</span> y = d3.scaleLinear().range([CHART_HEIGHT, <span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">const</span> chartContainer = d3</span><br><span class="line">    .select(<span class="string">&quot;#svgChart&quot;</span>)</span><br><span class="line">    .attr(<span class="string">&quot;width&quot;</span>, CHART_WIDTH)</span><br><span class="line">    .attr(<span class="string">&quot;height&quot;</span>, CHART_HEIGHT + MARGINS.top + MARGINS.bottom);</span><br><span class="line">  <span class="keyword">const</span> chart = chartContainer.append(<span class="string">&quot;g&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> selectedData = DUMMY_DATA;</span><br><span class="line">  <span class="keyword">let</span> unselectedData = [];</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">renderChart</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    chart</span><br><span class="line">      .selectAll(<span class="string">&quot;.bar&quot;</span>)</span><br><span class="line">      .data(selectedData, <span class="function">(<span class="params">data</span>) =&gt;</span> data.id)</span><br><span class="line">      .enter()</span><br><span class="line">      .append(<span class="string">&quot;rect&quot;</span>)</span><br><span class="line">      .classed(<span class="string">&quot;bar&quot;</span>, <span class="literal">true</span>)</span><br><span class="line">      .attr(<span class="string">&quot;width&quot;</span>, x.bandwidth())</span><br><span class="line">      .attr(<span class="string">&quot;height&quot;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> CHART_HEIGHT - y(data.value))</span><br><span class="line">      .attr(<span class="string">&quot;x&quot;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> x(data.region))</span><br><span class="line">      .attr(<span class="string">&quot;y&quot;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> y(data.value));</span><br><span class="line"></span><br><span class="line">    chart</span><br><span class="line">      .selectAll(<span class="string">&quot;.bar&quot;</span>)</span><br><span class="line">      .data(selectedData, <span class="function">(<span class="params">data</span>) =&gt;</span> data.id)</span><br><span class="line">      .exit()</span><br><span class="line">      .remove();</span><br><span class="line"></span><br><span class="line">    chart</span><br><span class="line">      .selectAll(<span class="string">&quot;.label&quot;</span>)</span><br><span class="line">      .data(selectedData, <span class="function">(<span class="params">data</span>) =&gt;</span> data.id)</span><br><span class="line">      .enter()</span><br><span class="line">      .append(<span class="string">&quot;text&quot;</span>)</span><br><span class="line">      .text(<span class="function">(<span class="params">data</span>) =&gt;</span> data.value)</span><br><span class="line">      .attr(<span class="string">&quot;x&quot;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> x(data.region) + x.bandwidth() / <span class="number">2</span>)</span><br><span class="line">      .attr(<span class="string">&quot;y&quot;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> y(data.value) - <span class="number">20</span>)</span><br><span class="line">      .attr(<span class="string">&quot;text-anchor&quot;</span>, <span class="string">&quot;middle&quot;</span>)</span><br><span class="line">      .classed(<span class="string">&quot;label&quot;</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">    chart</span><br><span class="line">      .selectAll(<span class="string">&quot;.label&quot;</span>)</span><br><span class="line">      .data(selectedData, <span class="function">(<span class="params">data</span>) =&gt;</span> data.id)</span><br><span class="line">      .exit()</span><br><span class="line">      .remove();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  x.domain(DUMMY_DATA.map(<span class="function">(<span class="params">d</span>) =&gt;</span> d.region));</span><br><span class="line">  y.domain([<span class="number">0</span>, d3.max(DUMMY_DATA, <span class="function">(<span class="params">d</span>) =&gt;</span> d.value) + <span class="number">3</span>]);</span><br><span class="line">  chart</span><br><span class="line">    .append(<span class="string">&quot;g&quot;</span>)</span><br><span class="line">    .call(d3.axisBottom(x).tickSizeOuter(<span class="number">0</span>))</span><br><span class="line">    .attr(<span class="string">&quot;transform&quot;</span>, <span class="string">`translate(0, <span class="subst">$&#123;CHART_HEIGHT&#125;</span>)`</span>)</span><br><span class="line">    .attr(<span class="string">&quot;color&quot;</span>, <span class="string">&quot;#4f009e&quot;</span>);</span><br><span class="line">  renderChart();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> listItems = d3</span><br><span class="line">    .select(<span class="string">&quot;#data&quot;</span>)</span><br><span class="line">    .attr(<span class="string">&quot;width&quot;</span>, inputBoxWidth)</span><br><span class="line">    .select(<span class="string">&quot;ul&quot;</span>)</span><br><span class="line">    .selectAll(<span class="string">&quot;li&quot;</span>)</span><br><span class="line">    .data(DUMMY_DATA)</span><br><span class="line">    .enter()</span><br><span class="line">    .append(<span class="string">&quot;li&quot;</span>);</span><br><span class="line">  listItems.append(<span class="string">&quot;span&quot;</span>).text(<span class="function">(<span class="params">data</span>) =&gt;</span> data.region);</span><br><span class="line">  listItems</span><br><span class="line">    .append(<span class="string">&quot;input&quot;</span>)</span><br><span class="line">    .attr(<span class="string">&quot;type&quot;</span>, <span class="string">&quot;checkbox&quot;</span>)</span><br><span class="line">    .attr(<span class="string">&quot;checked&quot;</span>, <span class="literal">true</span>)</span><br><span class="line">    .on(<span class="string">&quot;change&quot;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">let</span> changed = data.path[<span class="number">0</span>].__data__;</span><br><span class="line">      <span class="keyword">let</span> justUnselected = DUMMY_DATA.filter(<span class="function">(<span class="params">d</span>) =&gt;</span> d.id === changed.id);</span><br><span class="line">      <span class="keyword">if</span> (unselectedData.indexOf(changed) === -<span class="number">1</span>) &#123;</span><br><span class="line">        unselectedData.push(justUnselected[<span class="number">0</span>]);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        unselectedData = unselectedData.filter(<span class="function">(<span class="params">d</span>) =&gt;</span> d !== justUnselected[<span class="number">0</span>]);</span><br><span class="line">      &#125;</span><br><span class="line">      selectedData = DUMMY_DATA.filter(<span class="function">(<span class="params">d</span>) =&gt;</span> unselectedData.indexOf(d) === -<span class="number">1</span>);</span><br><span class="line">      renderChart();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2021/11/05/unpacking-in-python-and-destruction-in-javascript/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Heechan Jeong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ANGUK PARTNERS">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/05/unpacking-in-python-and-destruction-in-javascript/" class="post-title-link" itemprop="url">unpacking in python and destruction in javascript</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-11-05 15:22:06" itemprop="dateCreated datePublished" datetime="2021-11-05T15:22:06+09:00">2021-11-05</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-03-28 08:44:35" itemprop="dateModified" datetime="2022-03-28T08:44:35+09:00">2022-03-28</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="unpacking-in-python">UNPACKING IN PYTHON</h2>
-<ul>
-<li><p>USE <code>*</code> in front of tuple object identifier</p></li>
-<li><p>USE <code>**</code> in front of dictionary object identifier</p></li>
-<li><p>These are used as parameters as well as arguments</p></li>
-</ul>
-<h2 id="object-structure-destruction-in-javascript">OBJECT STRUCTURE DESTRUCTION IN JAVASCRIPT</h2>
-<ul>
-<li><p>Allowed only in case of python-dictionary-like javascript object</p></li>
-<li><p>This is used only for allocation of value mainly for acting as a parameter</p></li>
-</ul>
 
       
     </div>
