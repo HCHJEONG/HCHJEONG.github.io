@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
-<meta name="description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
+<meta name="description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for t">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D!">
 <meta property="og:url" content="http://hchjeong.github.io/2021/10/28/conv1d-in-torch/index.html">
 <meta property="og:site_name" content="ANGUK PARTNERS">
-<meta property="og:description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for">
+<meta property="og:description" content="CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset  After a layer, all the channels are summed up as to each neuron in case of 2D  However, in case of 1D, for t">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-27T23:42:38.000Z">
-<meta property="article:modified_time" content="2022-03-27T23:52:31.823Z">
+<meta property="article:modified_time" content="2022-03-28T00:09:04.002Z">
 <meta property="article:author" content="Heechan Jeong">
 <meta property="article:tag" content="ml">
 <meta name="twitter:card" content="summary">
@@ -120,7 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset"><span class="nav-number">1.</span> <span class="nav-text">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset"><span class="nav-number">1.</span> <span class="nav-text">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#however-in-case-of-1d-for-the-next-layer-all-the-channels-are-stacked-in-order-to-make-a-matrix"><span class="nav-number">1.1.</span> <span class="nav-text">However, in case of 1D, for the next layer, all the channels are stacked in order to make a matrix</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -212,7 +212,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-03-28 08:52:31" itemprop="dateModified" datetime="2022-03-28T08:52:31+09:00">2022-03-28</time>
+        <time title="Modified: 2022-03-28 09:09:04" itemprop="dateModified" datetime="2022-03-28T09:09:04+09:00">2022-03-28</time>
       </span>
 
   
@@ -225,7 +225,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset!</h2>
+        <h2 id="convolution-1d-multilayers-structure-is-totally-differnt-from-2d-in-case-of-2d-dataset">CONVOLUTION 1D MULTILAYERS STRUCTURE IS TOTALLY DIFFERNT FROM 2D In Case Of 2D Dataset</h2>
 <ul>
 <li>After a layer, all the channels are summed up as to each neuron in case of 2D</li>
 </ul>
