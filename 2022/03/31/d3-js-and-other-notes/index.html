@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;hchjeong.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script>
+<meta name="description" content="pandas dataframe to and from python dictionay 12345678910111213141516171819202122232425dic_data&#x3D;[&amp;#123;&amp;#x27;a&amp;#x27;: 0, &amp;#x27;b&amp;#x27;: &amp;#x27;k&amp;#x27;, &amp;#x27;c&amp;#x27;: True&amp;#125;,        &amp;#123;&amp;#x27;a&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="d3 js and other notes">
+<meta property="og:url" content="http://hchjeong.github.io/2022/03/31/d3-js-and-other-notes/index.html">
+<meta property="og:site_name" content="ANGUK PARTNERS">
+<meta property="og:description" content="pandas dataframe to and from python dictionay 12345678910111213141516171819202122232425dic_data&#x3D;[&amp;#123;&amp;#x27;a&amp;#x27;: 0, &amp;#x27;b&amp;#x27;: &amp;#x27;k&amp;#x27;, &amp;#x27;c&amp;#x27;: True&amp;#125;,        &amp;#123;&amp;#x27;a&amp;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-31T08:26:25.000Z">
+<meta property="article:modified_time" content="2022-03-31T09:15:41.666Z">
+<meta property="article:author" content="Heechan Jeong">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://hchjeong.github.io/2022/03/31/d3-js-and-other-notes/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;http:&#x2F;&#x2F;hchjeong.github.io&#x2F;2022&#x2F;03&#x2F;31&#x2F;d3-js-and-other-notes&#x2F;&quot;,&quot;path&quot;:&quot;2022&#x2F;03&#x2F;31&#x2F;d3-js-and-other-notes&#x2F;&quot;,&quot;title&quot;:&quot;d3 js and other notes&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>d3 js and other notes | ANGUK PARTNERS</title><script src="/js/config.js"></script>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript><meta name="google-site-verification" content="gf7brwkPWUFDVsZlMiPsYcsKOjr_irdxG_pluNxQ66M" />
+<meta name="naver-site-verification" content="145e8a587f6eddaabff92b987d9cab8d13205700" />
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- firstAdsense -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9022646383881973"
+     data-ad-slot="4785795692"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">ANGUK PARTNERS</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pandas-dataframe-to-and-from-python-dictionay"><span class="nav-number">1.</span> <span class="nav-text">pandas dataframe to and from python dictionay</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pandas-groupby-d3-js-nest-elasticsearch-collapse"><span class="nav-number">2.</span> <span class="nav-text">pandas : groupby &#x3D;&#x3D; d3 js : nest &#x3D;&#x3D; elasticsearch : collapse</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript-code-for-converting-json-to-array"><span class="nav-number">3.</span> <span class="nav-text">javascript code for converting json to array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript-code-for-handling-array"><span class="nav-number">4.</span> <span class="nav-text">javascript code for handling array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pytorch-cuda-out-of-memeoryoom-solutions"><span class="nav-number">5.</span> <span class="nav-text">pytorch cuda Out Of Memeory(OOM) solutions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#svg-path-d-attr-grammar"><span class="nav-number">6.</span> <span class="nav-text">svg path d attr grammar</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Heechan Jeong</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://hchjeong.github.io/2022/03/31/d3-js-and-other-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Heechan Jeong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ANGUK PARTNERS">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          d3 js and other notes
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-03-31 17:26:25 / Modified: 18:15:41" itemprop="dateCreated datePublished" datetime="2022-03-31T17:26:25+09:00">2022-03-31</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="pandas-dataframe-to-and-from-python-dictionay">pandas dataframe to and from python dictionay</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">dic_data=[&#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">0</span>, <span class="string">&#x27;b&#x27;</span>: <span class="string">&#x27;k&#x27;</span>, <span class="string">&#x27;c&#x27;</span>: <span class="literal">True</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;b&#x27;</span>: <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;c&#x27;</span>: <span class="literal">False</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">2</span>, <span class="string">&#x27;b&#x27;</span>: <span class="string">&#x27;gd&#x27;</span>, <span class="string">&#x27;c&#x27;</span>: <span class="literal">True</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">8</span>, <span class="string">&#x27;b&#x27;</span>: <span class="string">&#x27;sa&#x27;</span>, <span class="string">&#x27;c&#x27;</span>: <span class="literal">True</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&#x27;a&#x27;</span>: <span class="number">8</span>, <span class="string">&#x27;b&#x27;</span>: <span class="string">&#x27;an&#x27;</span>, <span class="string">&#x27;c&#x27;</span>: <span class="literal">False</span>&#125;]</span><br><span class="line"></span><br><span class="line">df_data = pandas.DataFrame.from_records(dic_data)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(df_data.to_dict(<span class="string">&#x27;list&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># &#123;</span></span><br><span class="line"><span class="comment"># &#x27;a&#x27;: [0, 3, 2, 8, 8], </span></span><br><span class="line"><span class="comment"># &#x27;b&#x27;: [&#x27;k&#x27;, &#x27;a&#x27;, &#x27;gd&#x27;, &#x27;sa&#x27;, &#x27;an&#x27;], </span></span><br><span class="line"><span class="comment"># &#x27;c&#x27;: [True, False, True, True, False]</span></span><br><span class="line"><span class="comment"># &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(df_data.to_dict(<span class="string">&#x27;records&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># dic_data=[&#123;&#x27;a&#x27;: 0, &#x27;b&#x27;: &#x27;k&#x27;, &#x27;c&#x27;: True&#125;,</span></span><br><span class="line"><span class="comment">#         &#123;&#x27;a&#x27;: 3, &#x27;b&#x27;: &#x27;a&#x27;, &#x27;c&#x27;: False&#125;,</span></span><br><span class="line"><span class="comment">#         &#123;&#x27;a&#x27;: 2, &#x27;b&#x27;: &#x27;gd&#x27;, &#x27;c&#x27;: True&#125;,</span></span><br><span class="line"><span class="comment">#         &#123;&#x27;a&#x27;: 8, &#x27;b&#x27;: &#x27;sa&#x27;, &#x27;c&#x27;: True&#125;,</span></span><br><span class="line"><span class="comment">#         &#123;&#x27;a&#x27;: 8, &#x27;b&#x27;: &#x27;an&#x27;, &#x27;c&#x27;: False&#125;]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="pandas-groupby-d3-js-nest-elasticsearch-collapse">pandas : groupby == d3 js : nest == elasticsearch : collapse</h2>
+<h2 id="javascript-code-for-converting-json-to-array">javascript code for converting json to array</h2>
+<ol type="1">
+<li><code>Object.entries(json)</code></li>
+<li><code>Object.keys(json)</code></li>
+<li><code>Object.values(json)</code></li>
+</ol>
+<h2 id="javascript-code-for-handling-array">javascript code for handling array</h2>
+<ol type="1">
+<li><code>array.forEach((i)=&gt;&#123;return null;&#125;)</code></li>
+<li><code>array.map((i)=&gt;&#123;return null;&#125;)</code></li>
+<li><code>array.filter((i)=&gt;&#123;return null;&#125;)</code></li>
+</ol>
+<ul>
+<li><code>json = Object.fromEntries(array)</code></li>
+</ul>
+<h2 id="pytorch-cuda-out-of-memeoryoom-solutions">pytorch cuda Out Of Memeory(OOM) solutions</h2>
+<ol type="1">
+<li><p>before every training epoch starting:</p>
+<p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">torch.cuda.empty_cache()</span><br></pre></td></tr></table></figure></p></li>
+<li><p>before every testing/validating epoch starting:</p>
+<p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> torch.no_grad():</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Be sure that only after fetching batch from data loader, it should be input into cuda device</p></li>
+<li><p>for cpu memory, use del variables</p></li>
+<li><p>be sure about avoiding train history and test history accumulating and calculating torch in cuda</p></li>
+</ol>
+<h2 id="svg-path-d-attr-grammar">svg path d attr grammar</h2>
+<ul>
+<li>move to:
+<ul>
+<li>M/m</li>
+</ul></li>
+<li>close at:
+<ul>
+<li>Z/z</li>
+</ul></li>
+<li>line:
+<ul>
+<li>L/l</li>
+<li>H/h</li>
+<li>V/v</li>
+</ul></li>
+<li>Bezier:
+<ul>
+<li>C/c</li>
+<li>S/s</li>
+<li>Q/q</li>
+<li>T/t</li>
+</ul></li>
+<li>Elliptical:
+<ul>
+<li>A/a</li>
+</ul></li>
+<li>Math.PI</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/03/28/dev-laptop-setting/" rel="prev" title="dev laptop setting">
+                  <i class="fa fa-chevron-left"></i> dev laptop setting
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+<script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Heechan Jeong</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
