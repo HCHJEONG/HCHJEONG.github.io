@@ -175,7 +175,7 @@
                 <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
                     <div>
                         
-                        <h2><span style="color:aquablue;font-weight:bold;">안국법률사무소</span>에 오신 것을 환영합니다!</h2>
+                        <h2><h3 style="color:white;font-weight:bold;">안국법률사무소에 오신 것을 환영합니다!</h3></h2>
                         <p></p>
                         
                         <h2></h2>
@@ -739,5 +739,21 @@ $('#intro').find('img').each(function(){
 
 
       
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </div></body>
 </html>
