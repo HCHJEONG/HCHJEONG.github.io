@@ -128,7 +128,7 @@
                     <!-- Nav logo -->
                     <div class="logo">
                         <a href="/" title="Logo" class="animsition-link">
-                         <img src="img/logo.png" alt="Logo" width="35px;"> 
+                         <img src="/img/logo.png" alt="Logo" width="35px;"> 
                         </a>
                     </div>
                     <!-- // Nav logo -->
@@ -169,13 +169,13 @@
       <!-- ============================ Hero Image =========================== -->
 
 <section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
                 <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
                     <div>
                         
-                        <h2><span>안국법률사무소</span>에 오신 것을 환영합니다.</h2>
+                        <h2><span>안국법률사무소</span>에 오신 것을 환영합니다!</h2>
                         <p></p>
                         
                         <h2></h2>
@@ -271,7 +271,7 @@
 <section id="statement">
     <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
         <div class="row">
-            <p>2001년 개소이래 여러분들과의 믿음을 지켜나가고 있습니다.</p>
+            <p>안국법률사무소는 2001년 이래 여러분들과의 믿음을 지켜나가고 있습니다.</p>
         </div>
     </div>
 </section>
@@ -774,5 +774,21 @@ $('#intro').find('img').each(function(){
 
 
       
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </div></body>
 </html>
