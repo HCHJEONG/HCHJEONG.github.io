@@ -3,11 +3,11 @@
   <title>ANGUK LAW OFFICES</title>
   
   <subtitle>the best Korean legal-tech lawfirm</subtitle>
-  <link href="http://hchjeong.github.io/angukLawPage/atom.xml" rel="self"/>
+  <link href="http://hchjeong.github.io/atom.xml" rel="self"/>
   
-  <link href="http://hchjeong.github.io/angukLawPage/"/>
+  <link href="http://hchjeong.github.io/"/>
   <updated>2023-04-07T00:13:22.748Z</updated>
-  <id>http://hchjeong.github.io/angukLawPage/</id>
+  <id>http://hchjeong.github.io/</id>
   
   <author>
     <name>Heechan Jeong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>안국법률사무소 소개</title>
-    <link href="http://hchjeong.github.io/angukLawPage/2023/03/21/aboutUs/"/>
-    <id>http://hchjeong.github.io/angukLawPage/2023/03/21/aboutUs/</id>
+    <link href="http://hchjeong.github.io/2023/03/21/aboutUs/"/>
+    <id>http://hchjeong.github.io/2023/03/21/aboutUs/</id>
     <published>2023-03-21T01:24:18.000Z</published>
     <updated>2023-04-07T00:13:22.748Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>환영합니다. 안국법률사무소입니다.</title>
-    <link href="http://hchjeong.github.io/angukLawPage/2023/03/21/hello-world/"/>
-    <id>http://hchjeong.github.io/angukLawPage/2023/03/21/hello-world/</id>
+    <link href="http://hchjeong.github.io/2023/03/21/hello-world/"/>
+    <id>http://hchjeong.github.io/2023/03/21/hello-world/</id>
     <published>2023-03-20T23:12:11.749Z</published>
     <updated>2023-04-06T23:02:16.744Z</updated>
     

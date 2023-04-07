@@ -2,14 +2,14 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://HCHJEONG.github.io/angukLawPage/</loc>
+        <loc>http://HCHJEONG.github.io/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
 
     <url>
-        <loc>http://HCHJEONG.github.io/angukLawPage/2023/03/21/aboutUs/</loc>
+        <loc>http://HCHJEONG.github.io/2023/03/21/aboutUs/</loc>
         <lastmod>2023-04-07T00:13:22.748Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -17,7 +17,7 @@
     </url>
 
     <url>
-        <loc>http://HCHJEONG.github.io/angukLawPage/2023/03/21/hello-world/</loc>
+        <loc>http://HCHJEONG.github.io/2023/03/21/hello-world/</loc>
         <lastmod>2023-04-06T23:02:16.744Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
