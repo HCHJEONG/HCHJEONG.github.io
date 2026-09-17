@@ -5,7 +5,7 @@
     "body": [
       "---",
       "author: ${1:Heechan Jeong}",
-      "pubDatetime: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:${CURRENT_SECOND}Z",
+      "pubDatetime: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+09:00",
       "title: ${2:Title}",
       "featured: ${3|false,true|}",
       "draft: ${4|false,true|}",
@@ -22,7 +22,7 @@
     "body": [
       "---",
       "author: ${1:Heechan Jeong}",
-      "pubDatetime: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:${CURRENT_SECOND}Z",
+      "pubDatetime: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+09:00",
       "title: ${2:Title}",
       "featured: false",
       "draft: false",

@@ -1,6 +1,6 @@
 ---
 author: Heechan Jeong
-pubDatetime: 2026-09-17T13:17:00Z
+pubDatetime: 2026-09-17T13:17:00+09:00
 title: 나의 첫 번째 블로그 포스트
 postSlug: test-new-post
 featured: false
