@@ -1,37 +1,19 @@
 ---
 title: "About"
-description: "A bit about me and this blog."
+description: "Heechan Jeong is a Korean attorney and founder of LAWVOT, working at the intersection of law, AI, and product development."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+I'm Heechan Jeong, a Korean attorney and the founder of [LAWVOT](https://lawvot.com), an AI-powered legal information and analysis platform.
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+For more than 20 years, my work has focused on privacy, data governance, regulatory compliance, and emerging technology law. Alongside legal practice, I build legal data pipelines, search systems, and AI-assisted tools for legal research.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+This blog is a place for notes and essays on legal AI, responsible technology, and the practical work of turning legal knowledge into useful systems. I write from both sides of that work: advising on legal requirements and building products that put them into practice.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## Projects
 
-## Features
+- [LAWVOT](https://lawvot.com) — AI-assisted legal research, document generation, and knowledge workflows.
+- [Global AI Pricing](https://pricingai.penvot.com) — a project exploring AI pricing. [Source code](https://github.com/HCHJEONG/global-ai-pricing).
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+## Get in touch
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
-
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Find me on [LinkedIn](https://www.linkedin.com/in/heechan-jeong-218b2927/) and [GitHub](https://github.com/HCHJEONG), or email [hchjeong@gmail.com](mailto:hchjeong@gmail.com).
