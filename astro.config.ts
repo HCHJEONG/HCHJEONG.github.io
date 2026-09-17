@@ -29,8 +29,8 @@ export default defineConfig({
     }),
   ],
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: [config.site.lang ?? "en"],
+    defaultLocale: config.site.lang ?? "en",
     routing: {
       prefixDefaultLocale: false,
     },
