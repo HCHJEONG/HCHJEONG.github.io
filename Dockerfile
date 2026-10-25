@@ -1,5 +1,5 @@
 # Base stage for building the static files
-FROM node:lts AS base
+FROM node:24.22.1-bookworm AS base
 WORKDIR /app
 
 # Install pnpm
